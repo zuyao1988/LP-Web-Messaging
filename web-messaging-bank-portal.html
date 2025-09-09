@@ -108,16 +108,14 @@
             responseType: "id_token" //// responseType:"code" for codeflow/ id_token 
         };
 
-        document.location = cnf.logoutURI + "?" + $.param({
-            returnTo: window.location.href.split('/').slice(0,-1).join('/') + '/web-messaging-login-page.html',
-            client_id: cnf.clientID
-        });
         // document.location = cnf.logoutURI + "?" + $.param({
-        //     returnTo: window.location.origin + '/LP-Web-Messaging/web-messaging-login-page.html',
+        //     returnTo: window.location.href.split('/').slice(0,-1).join('/') + '/web-messaging-login-page.html',
         //     client_id: cnf.clientID
         // });
-
-
+        document.location = cnf.logoutURI + "?" + $.param({
+            returnTo: window.location.origin + '/web-messaging-login-page.html',
+            client_id: cnf.clientID
+        });
 
 
         // document.location = document.location.href.replace('web-messaging-bank-portal.html', 'web-messaging-login-page.html');
