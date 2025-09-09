@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- optimized meta tag -->
+  <meta name="viewport" content="user-scalable=0, width=device-width, initial-scale=1.0,  minimum-scale=1.0, maximum-scale=1.0">
+
+  <title> LE Tag Code Pack - Web Messaging</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- le-mtagconfig.js must be called from every page. Please update src to match account ID accordingly -->
+  <!-- BEGIN LivePerson Monitor. -->
+  <script type="text/javascript" src="le-mtagconfig.js"></script>
+  <!-- END LivePerson Monitor. -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript">
+    lpTag.autoStart = false;
+
+    function getParameterByName(name, url) {
+      if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+      var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),results = regex.exec(url);
+      if (!results)
+        return null;
+      if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+
+   var cnf = {
+      redirectURI: document.location.href.replace('web-messaging-login-page.html', 'web-messaging-member-portal.html'),
+      authURI: "https://dev-izkao4-v.au.auth0.com/authorize", // Authorisation endpoint
+      clientID: "9QGDzw0SnsUs4jRK3hBjNs1aEBpxncWY",
+      grantType: "authorization_code", // How access will be granted
+      nonce: "LiveEngage",
+      scope: "openid profile",
+      responseType: "code" // Code flow
+    };
+
+    var code = getParameterByName('code');
+
+    window.lpLoginUser = function() {
+      console.log(cnf);
+
+      var lpSite = document.getElementById('accountId').value;
+
+      document.location = cnf.authURI + "?" + $.param({
+        redirect_uri: cnf.redirectURI,
+        client_id: cnf.clientID,
+        connection: cnf.connection,
+        grant_type: cnf.grantType,
+        nonce: cnf.nonce,
+        scope: cnf.scope,
+        response_type: cnf.responseType
+      });
+    };
+
+   // Start Tag or not...
+   $(document).ready(function() {
+      document.getElementById('loginButton').style.display="block";
+      document.getElementById("idToken").value = "";
+
+      var toLogin = document.getElementById('toLogin');
+      toLogin.style.visibility = 'visible';
+      var loggedIn = document.getElementById('loggedIn');
+      loggedIn.style.visibility = 'hidden';
+
+   if(lpTag.site !== undefined && lpTag.site !== '') {
+      document.getElementById("accountId").value = lpTag.site;
+
+      console.log("did i get the right site id? site id is currently " + lpTag.site);
+      lpTag.section = [ "web", "messaging" ];
+    }
+
+  });
+
+ </script>
+</head>
+<body>
+
+<script type="text/javascript">
+  lpTag.sdes = lpTag.sdes||[];  //Always include the declaration of the SDE's array.
+</script>
+
+<div id="loginBox">
+    <p><img src="logo.png"></img></p>
+    <div id="toLogin">
+        <p>Account ID:</p>
+        <input type="text" id="accountId"></input>
+        <input id="loginButton" type="button" value="Login" onclick="lpLoginUser();"><br />
+    </div?>
+    <div id="loggedIn">
+        <center>
+            <img src="padlock.png"></img>
+            <p>Logged in</p>
+            <div>
+              <p>ID Token</p>
+              <TextArea id="idToken"></TextArea>
+            </div>
+        </center>
+    </div>
+</div>
+</body>
+</html>

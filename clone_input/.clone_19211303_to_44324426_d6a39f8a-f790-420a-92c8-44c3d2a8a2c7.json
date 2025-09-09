@@ -1,0 +1,202 @@
+{
+  "targetAccount": "44324426",
+  "sourceAccount": "19211303",
+  "accountEvent": "d6a39f8a-f790-420a-92c8-44c3d2a8a2c7",
+  "diff": [
+    {
+      "type": "site_settings",
+      "idArr": [
+        {
+          "id": "messaging.historic.data.masking.regexp"
+        },
+        {
+          "id": "le.site.session.timeout.milliseconds"
+        },
+        {
+          "id": "le.agent.chatInput.disableIconsForMessaging"
+        },
+        {
+          "id": "messaging.post.survey.autoclose.time.sec"
+        },
+        {
+          "id": "unauth.messaging.block.consumer.history"
+        },
+        {
+          "id": "messaging.fallback.to.skill.when.in.queue"
+        },
+        {
+          "id": "messaging.ACD.gradual.ramp.up.enable"
+        },
+        {
+          "id": "messaging.audio.sharing.enabled"
+        },
+        {
+          "id": "le.agent.chatInput.disableEmojisToolbar"
+        },
+        {
+          "id": "messaging.file.sharing.enabled"
+        },
+        {
+          "id": "le.user.login.status"
+        },
+        {
+          "id": "le.site.supportedLanguages"
+        },
+        {
+          "id": "le.general.timezone"
+        },
+        {
+          "id": "unified.window.allow.first.party.storage"
+        },
+        {
+          "id": "messaging.transcript.agent.masking.regexp"
+        },
+        {
+          "id": "messaging.ACD.response.time"
+        },
+        {
+          "id": "msggw.optin_out.enable"
+        },
+        {
+          "id": "le.unauth.refresh.token.idle.expiration"
+        },
+        {
+          "id": "messaging.fallback.to.skill.on.invalid.transfer.state"
+        },
+        {
+          "id": "messaging.default.response.prioritized.time"
+        },
+        {
+          "id": "messaging.brand.shift.delay.epoch.seconds"
+        },
+        {
+          "id": "messaging.default.response.time"
+        },
+        {
+          "id": "messaging.conv.autoclose.time.sec"
+        },
+        {
+          "id": "messaging.max.conversions"
+        },
+        {
+          "id": "messaging.default.response.time.unit"
+        },
+        {
+          "id": "messaging.ACD.response.time.unit"
+        },
+        {
+          "id": "lob.enabled"
+        },
+        {
+          "id": "messaging.routing.autoaccept"
+        },
+        {
+          "id": "messaging.default.response.urgent.time"
+        },
+        {
+          "id": "le.agent.messaging.showAgentGroupFilter"
+        },
+        {
+          "id": "le.site.leui.phase"
+        }
+      ],
+      "toRemoveFromTarget": [],
+      "toAddToTarget": [],
+      "sourceAccountRevision": 3998,
+      "targetAccountRevision": 27,
+      "nonWhitelistedIds": [
+        {
+          "id": "messaging.fallback.skill.id"
+        },
+        {
+          "id": "le.site.neutralCountryLabel"
+        },
+        {
+          "id": "le.ui.customWidgetsTimeoutSeconds"
+        },
+        {
+          "id": "messaging.fall.to.requested.skill.if.suggested.agent.is.in.gradual.ramp.up"
+        },
+        {
+          "id": "le.ui.custom.rings.enabled"
+        },
+        {
+          "id": "cobrowse.account.features.apiSecret"
+        },
+        {
+          "id": "messaging.routing.sorting.queue.definitions"
+        },
+        {
+          "id": "msggw.auth.consumer.whatsapp"
+        },
+        {
+          "id": "le.suggestions.smartReply.addReplaceSmartReplyControls"
+        },
+        {
+          "id": "le.site.skill.selection.definition"
+        },
+        {
+          "id": "conversation.hooks.brand.auto.unassign.config"
+        },
+        {
+          "id": "messaging.pusher.notification.msg"
+        },
+        {
+          "id": "messaging.smart.capacity.per.skill.definition"
+        },
+        {
+          "id": "messaging.sdk.event.manager.domain"
+        },
+        {
+          "id": "messaging.pusher.localised.notification.msg"
+        },
+        {
+          "id": "messaging.conv.autoclose.minimalValue"
+        },
+        {
+          "id": "lptag.site.tagletsRepositoryAccount"
+        },
+        {
+          "id": "encryption.referrer"
+        },
+        {
+          "id": "le.campaign.engagement.capping"
+        },
+        {
+          "id": "le.agent.messaging.managerWorkspaceMetricsConfiguration"
+        },
+        {
+          "id": "le.agent.messaging.newAgentWorkspaceForLPA"
+        },
+        {
+          "id": "messaging.pusher.rich.content.notification.msg"
+        },
+        {
+          "id": "messaging.pusher.localised.rich.content.notification.msg"
+        },
+        {
+          "id": "etsops.clone.allowed.src.accounts"
+        },
+        {
+          "id": "le.newAgentWorkspace.increaseLoadingWidgetTimeout"
+        },
+        {
+          "id": "controllerBot.autoMessages.offHoursIdleMessageTimer"
+        },
+        {
+          "id": "le.site.accountInfo"
+        },
+        {
+          "id": "le.auth.data"
+        },
+        {
+          "id": "le.suggestions"
+        },
+        {
+          "id": "messaging.rich.content.valid.urls"
+        }
+      ],
+      "dependents": []
+    }
+  ]
+}

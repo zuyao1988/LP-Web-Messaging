@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- optimized meta tag -->
+  <meta name="viewport" content="user-scalable=0, width=device-width, initial-scale=1.0,  minimum-scale=1.0, maximum-scale=1.0">
+
+  <title> LE Tag Code Pack - Web Messaging</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- le-mtagconfig.js must be called from every page. Please update src to match account ID accordingly -->
+  <!-- BEGIN LivePerson Monitor. -->
+  <script type="text/javascript" src="le-mtagconfig.js"></script>
+  <!-- END LivePerson Monitor. -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <script type="text/javascript">
+    function getParameterByName(name, url) {
+      if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+      var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),results = regex.exec(url);
+      if (!results)
+        return null;
+      if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+
+   var cnf = {
+      redirectURI: document.location.href,
+      authURI: "", // Authorisation endpoint
+      clientID: "",
+      grantType: "authorization_code", // How access will be granted
+      nonce: "LiveEngage",
+      scope: "openid", // What information to pass - LiveEngage can process standard claims & custom claims under parent lp_sdes. See https://developers.liveperson.com/mobile-sdk-and-web-authentication-detailed-api.html#openid-token-structure
+      responseType: "code" // Code flow
+    };
+
+    var code = getParameterByName('code');
+    console.log("code   : " + code);
+
+    // window.lpGetAuthenticationToken = function (callback) {
+    //   if(typeof code === 'undefined' || code === null){
+    //       console.log('code undefined');
+
+    //       if(document.location.href.indexOf('web-messaging-member-portal.html')) {
+    //         document.location = document.location.href.replace('web-messaging-member-portal.html', 'web-messaging-login-page.html');
+    //       }
+    //   } else {
+    //     console.log("Got notification from the cb redirect tab: " + code);
+    //     var payload = {
+    //       ssoKey: code, // code (AuthKey) in Code Flow
+    //       redirect_uri: document.location.href
+    //     };
+
+    //     console.log('payload: ' + JSON.stringify(payload));
+    //     var error;
+    //     if(error !== undefined) {
+    //         console.log("error undefined");
+    //         callback(payload, error);
+    //     } else {
+    //         console.log("no error");
+    //         callback(payload);
+    //     }
+    //   }
+    // };
+
+    window.lpLogoutUser = function() {
+      document.location = document.location.href.replace('web-messaging-member-portal.html', 'web-messaging-login-page.html');
+    };
+
+ // Start Tag or not...
+ $(document).ready(function() {
+    if(typeof code !== 'undefined' && code !== null){
+      console.log("have code");
+      document.getElementById("idToken").value = code;
+      console.log("code: " + code);
+      lpTag.section = [ "test-auth" ];
+
+      // This function tells LP monitoring the person is a known consumer from brand point of view (which is verified with idp),
+      // allowing authenticated engagements to be presented to the consumer
+      // function identityFn(callback) {
+      //   console.log('inside identityFn');
+      //   console.log('callback: ' + callback);
+      //   callback({
+      //     iss: "https://abc-izkao4-v.au.lol.com/", // Brand issuer claim
+      //     acr: "loa1",
+      //     sub: "auth0|5fa21a1e7c07e60069f23382" //"auth0|5f48bf4f0bf8540067472538" // Subject claim ID for customer
+      //   });
+      // }
+
+      // lpTag.identities.push(identityFn);
+
+      var toLogin = document.getElementById('toLogin');
+      toLogin.style.visibility = 'hidden';
+      var loggedIn = document.getElementById('loggedIn');
+      loggedIn.style.visibility = 'visible';
+    } else {
+      // Need to login and collect Token
+      if(document.location.href.indexOf('web-messaging-member-portal.html')) {
+        document.location = document.location.href.replace('web-messaging-member-portal.html', 'web-messaging-login-page.html');
+      }
+    }
+
+    if(lpTag.site !== undefined && lpTag.site !== '') {
+      document.getElementById("accountId").value = lpTag.site;
+      console.log("did i get the right site id? site id is currently " + lpTag.site);
+    };
+  });
+
+ </script>
+</head>
+<body>
+
+<script type="text/javascript">
+  lpTag.sdes = lpTag.sdes||[];  //Always include the declaration of the SDE's array.
+  lpTag.identities = lpTag.identities||[]; // NOTE: Required for authenticated web messaging or earlier.
+</script>
+
+<div id="loginBox">
+    <p><img src="logo.png"></img></p>
+    <div id="toLogin">
+        <p>Account ID:</p>
+        <input type="text" id="accountId"></input>
+    </div?>
+    <div id="loggedIn">
+        <center>
+            <img src="padlock.png"></img>
+            <p>Logged in</p>
+            <input id="loginButton" type="button" value="Logout" onclick="lpLogoutUser();"><br />
+            <div>
+              <p>ID Token / Code</p>
+              <TextArea id="idToken"></TextArea>
+            </div>
+        </center>
+    </div>
+</div>
+</body>
+</html>

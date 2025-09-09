@@ -1,0 +1,1313 @@
+{
+  "targetAccount": "44324426",
+  "sourceAccount": "19211303",
+  "accountEvent": "79bf245a-37b3-4036-839d-5d0e56b2cbd7",
+  "diff": [
+    {
+      "type": "appinstallations",
+      "idArr": [
+        {
+          "id": "Survey Bot"
+        }
+      ],
+      "sourceAccountRevision": 54,
+      "targetAccountRevision": -1
+    },
+    {
+      "type": "messaging_agent_surveys",
+      "idArr": [
+        {
+          "id": "Incident Logging"
+        },
+        {
+          "id": "Test"
+        },
+        {
+          "id": "Agent survey"
+        },
+        {
+          "id": "INV"
+        }
+      ],
+      "sourceAccountRevision": 19,
+      "targetAccountRevision": -1
+    },
+    {
+      "type": "working_hours",
+      "idArr": [
+        {
+          "id": "Testing bot office hour"
+        },
+        {
+          "id": "Working_PayMe"
+        },
+        {
+          "id": "125"
+        },
+        {
+          "id": "Test"
+        },
+        {
+          "id": "Working_Wealth Coach"
+        },
+        {
+          "id": "test0121"
+        }
+      ],
+      "sourceAccountRevision": 40,
+      "targetAccountRevision": -1
+    },
+    {
+      "type": "skills",
+      "idArr": [
+        {
+          "id": "Banking"
+        },
+        {
+          "id": "Escalation"
+        },
+        {
+          "id": "RBWM_HK_Service-IPO_MobileChat"
+        },
+        {
+          "id": "RBWM_HK_Sales-Insurance Pre-sales_MobileChat"
+        },
+        {
+          "id": "RBWM_HK_Service-Full Investment_MobileChat"
+        },
+        {
+          "id": "RBWM_HK_Sales-Full Insurance_MobileChat"
+        },
+        {
+          "id": "RBWM_GZC_Service-Banking_MobileChat"
+        },
+        {
+          "id": "RBWM_GZC_Service-Credit Card_MobileChat"
+        },
+        {
+          "id": "RBWM_GZC_Service-MPF_MobileChat"
+        },
+        {
+          "id": "RBWM_Routing-Service_Bot"
+        },
+        {
+          "id": "HKOS_EN_ProductSupport_WhatsApp_Agent"
+        },
+        {
+          "id": "HKOS_TC_ProductSupport_WhatsApp_Agent"
+        },
+        {
+          "id": "HKOS_SC_ProductSupport_WhatsApp_Agent"
+        },
+        {
+          "id": "HKOS_EN_Service_Banking_WhatsApp_Agent"
+        },
+        {
+          "id": "HKOS_EN_Service-Credit Card_WhatsApp_Agent"
+        },
+        {
+          "id": "HKOS_EN_Service-MPF_WhatsApp_Agent"
+        },
+        {
+          "id": "HKCC_EN_Sales-Full Insurance_WhatsApp_Agent"
+        },
+        {
+          "id": "HKCC_EN_Sales-Insurance Pre-sales_WhatsApp_Agent"
+        },
+        {
+          "id": "HKCC_EN_Service-Full Investment_WhatsApp_Agent"
+        },
+        {
+          "id": "HKCC_EN_Service-IPO_WhatsApp_Agent"
+        },
+        {
+          "id": "HKOS_TC_Service_Banking_WhatsApp__Agent"
+        },
+        {
+          "id": "HKOS_TC_Service-Credit Card_WhatsApp_Agent"
+        },
+        {
+          "id": "HKOS_TC_Service-MPF_WhatsApp_Agent"
+        },
+        {
+          "id": "HKCC_TC_Sales-Full Insurance_WhatsApp_Agent"
+        },
+        {
+          "id": "HKCC_TC_Sales-Insurance Pre-sales_WhatsApp_Agent"
+        },
+        {
+          "id": "HKCC_TC_Service-Full Investment_WhatsApp_Agent"
+        },
+        {
+          "id": "HKCC_TC_Service-IPO_WhatsApp_Agent"
+        },
+        {
+          "id": "HKOS_SC_Service_Banking_WhatsApp_Agent"
+        },
+        {
+          "id": "HKOS_SC_Service-Credit Card_WhatsApp_Agent"
+        },
+        {
+          "id": "HKOS_SC_Service-MPF_WhatsApp_Agent"
+        },
+        {
+          "id": "HKCC_SC_Sales-Full Insurance_WhatsApp_Agent"
+        },
+        {
+          "id": "HKCC_SC_Sales-Insurance Pre-sales_WhatsApp_Agent"
+        },
+        {
+          "id": "HKCC_SC_Service-Full Investment_WhatsApp_Agent"
+        },
+        {
+          "id": "HKCC_SC_Service-IPO_WhatsApp_Agent"
+        },
+        {
+          "id": "RBWM_Mobile_Chat_Bot"
+        },
+        {
+          "id": "HKOS_TC_Service_Banking_WhatsApp_Agent"
+        },
+        {
+          "id": "RBWM_GZC_Service-Banking_MobileChat_EN"
+        },
+        {
+          "id": "RBWM_GZC_Service-Banking_MobileChat_TC"
+        },
+        {
+          "id": "RBWM_GZC_Service-Banking_MobileChat_SC"
+        },
+        {
+          "id": "RBWM_GZC_Service-Credit Card_MobileChat_EN"
+        },
+        {
+          "id": "RBWM_GZC_Service-Credit Card_MobileChat_TC"
+        },
+        {
+          "id": "RBWM_GZC_Service-Credit Card_MobileChat_SC"
+        },
+        {
+          "id": "RBWM_GZC_Service-MPF_MobileChat_EN"
+        },
+        {
+          "id": "RBWM_GZC_Service-MPF_MobileChat_TC"
+        },
+        {
+          "id": "RBWM_GZC_Service-MPF_MobileChat_SC"
+        },
+        {
+          "id": "RBWM_HK_Service-IPO_MobileChat_EN"
+        },
+        {
+          "id": "RBWM_HK_Service-IPO_MobileChat_TC"
+        },
+        {
+          "id": "RBWM_HK_Service-IPO_MobileChat_SC"
+        },
+        {
+          "id": "RBWM_HK_Sales-Insurance Pre-sales_MobileChat_EN"
+        },
+        {
+          "id": "RBWM_HK_Sales-Insurance Pre-sales_MobileChat_TC"
+        },
+        {
+          "id": "RBWM_HK_Sales-Insurance Pre-sales_MobileChat_SC"
+        },
+        {
+          "id": "RBWM_HK_Service-Full Investment_MobileChat_EN"
+        },
+        {
+          "id": "RBWM_HK_Service-Full Investment_MobileChat_TC"
+        },
+        {
+          "id": "RBWM_HK_Service-Full Investment_MobileChat_SC"
+        },
+        {
+          "id": "RBWM_HK_Sales-Full Insurance_MobileChat_EN"
+        },
+        {
+          "id": "RBWM_HK_Sales-Full Insurance_MobileChat_TC"
+        },
+        {
+          "id": "RBWM_HK_Sales-Full Insurance_MobileChat_SC"
+        },
+        {
+          "id": "RBWM_GZC_Service-Maintenance_MobileChat"
+        },
+        {
+          "id": "RBWM_GZC_Service-Maintenance_MobileChat_EN"
+        },
+        {
+          "id": "RBWM_GZC_Service-Maintenance_MobileChat_TC"
+        },
+        {
+          "id": "RBWM_GZC_Service-Maintenance_MobileChat_SC"
+        },
+        {
+          "id": "RBWM_Messaging_Chat_Bot"
+        },
+        {
+          "id": "AMH_EN_BotTransfer"
+        },
+        {
+          "id": "HKOS_EN_One_Banking_MOB_AGENT"
+        },
+        {
+          "id": "HKOS_TC_One_Banking_MOB_AGENT"
+        },
+        {
+          "id": "HKOS_SC_One_Banking_MOB_AGENT"
+        },
+        {
+          "id": "HKOS_EN_One_Card_MOB_AGENT"
+        },
+        {
+          "id": "HKOS_TC_One_Card_MOB_AGENT"
+        },
+        {
+          "id": "HKOS_SC_One_Card_MOB_AGENT"
+        },
+        {
+          "id": "HKOS_EN_One_BankingMaint_MOB_AGENT"
+        },
+        {
+          "id": "HKOS_TC_One_BankingMaint_MOB_AGENT"
+        },
+        {
+          "id": "HKOS_SC_One_BankingMaint_MOB_AGENT"
+        },
+        {
+          "id": "HKOS_EN_One_CardsMaint_MOB_AGENT"
+        },
+        {
+          "id": "HKOS_TC_One_CardsMaint_MOB_AGENT"
+        },
+        {
+          "id": "HKOS_SC_One_CardsMaint_MOB_AGENT"
+        },
+        {
+          "id": "HKOS_EN_One_MPF_MOB_AGENT"
+        },
+        {
+          "id": "HKOS_TC_One_MPF_MOB_AGENT"
+        },
+        {
+          "id": "HKOS_SC_One_MPF_MOB_AGENT"
+        },
+        {
+          "id": "HKCC_EN_One_IPO_MOB_AGENT"
+        },
+        {
+          "id": "HKCC_TC_One_IPO_MOB_AGENT"
+        },
+        {
+          "id": "HKCC_SC_One_IPO_MOB_AGENT"
+        },
+        {
+          "id": "HKCC_EN_One_Insurance-Sales_MOB_AGENT"
+        },
+        {
+          "id": "HKCC_TC_One_Insurance-Sales_MOB_AGENT"
+        },
+        {
+          "id": "HKCC_SC_One_Insurance-Sales_MOB_AGENT"
+        },
+        {
+          "id": "HKCC_EN_One_Investment_MOB_AGENT"
+        },
+        {
+          "id": "HKCC_TC_One_Investment_MOB_AGENT"
+        },
+        {
+          "id": "HKCC_SC_One_Investment_MOB_AGENT"
+        },
+        {
+          "id": "HKCC_EN_One_Insurance_MOB_AGENT"
+        },
+        {
+          "id": "HKCC_TC_One_Insurance_MOB_AGENT"
+        },
+        {
+          "id": "HKCC_SC_One_Insurance_MOB_AGENT"
+        },
+        {
+          "id": "HKOS_EN_Premier_Banking_MOB_AGENT"
+        },
+        {
+          "id": "HKOS_TC_Premier_Banking_MOB_AGENT"
+        },
+        {
+          "id": "HKOS_SC_Premier_Banking_MOB_AGENT"
+        },
+        {
+          "id": "HKOS_EN_Premier_Card_MOB_AGENT"
+        },
+        {
+          "id": "HKOS_TC_Premier_Card_MOB_AGENT"
+        },
+        {
+          "id": "HKOS_SC_Premier_Card_MOB_AGENT"
+        },
+        {
+          "id": "HKOS_EN_Premier_BankingMaint_MOB_AGENT"
+        },
+        {
+          "id": "HKOS_TC_Premier_BankingMaint_MOB_AGENT"
+        },
+        {
+          "id": "HKOS_SC_Premier_BankingMaint_MOB_AGENT"
+        },
+        {
+          "id": "HKOS_EN_Premier_CardsMaint_MOB_AGENT"
+        },
+        {
+          "id": "HKOS_TC_Premier_CardsMaint_MOB_AGENT"
+        },
+        {
+          "id": "HKOS_SC_Premier_CardsMaint_MOB_AGENT"
+        },
+        {
+          "id": "HKOS_EN_Premier_MPF_MOB_AGENT"
+        },
+        {
+          "id": "HKOS_TC_Premier_MPF_MOB_AGENT"
+        },
+        {
+          "id": "HKOS_SC_Premier_MPF_MOB_AGENT"
+        },
+        {
+          "id": "HKCC_EN_Premier_IPO_MOB_AGENT"
+        },
+        {
+          "id": "HKCC_TC_Premier_IPO_MOB_AGENT"
+        },
+        {
+          "id": "HKCC_SC_Premier_IPO_MOB_AGENT"
+        },
+        {
+          "id": "HKCC_EN_Premier_Insurance-Sales_MOB_AGENT"
+        },
+        {
+          "id": "HKCC_TC_Premier_Insurance-Sales_MOB_AGENT"
+        },
+        {
+          "id": "HKCC_SC_Premier_Insurance-Sales_MOB_AGENT"
+        },
+        {
+          "id": "HKCC_EN_Premier_Investment_MOB_AGENT"
+        },
+        {
+          "id": "HKCC_TC_Premier_Investment_MOB_AGENT"
+        },
+        {
+          "id": "HKCC_SC_Premier_Investment_MOB_AGENT"
+        },
+        {
+          "id": "HKCC_EN_Premier_Insurance_MOB_AGENT"
+        },
+        {
+          "id": "HKCC_TC_Premier_Insurance_MOB_AGENT"
+        },
+        {
+          "id": "HKCC_SC_Premier_Insurance_MOB_AGENT"
+        },
+        {
+          "id": "HKOS_EN_Jade_Banking_MOB_AGENT"
+        },
+        {
+          "id": "HKOS_TC_Jade_Banking_MOB_AGENT"
+        },
+        {
+          "id": "HKOS_SC_Jade_Banking_MOB_AGENT"
+        },
+        {
+          "id": "HKOS_EN_Jade_Card_MOB_AGENT"
+        },
+        {
+          "id": "HKOS_TC_Jade_Card_MOB_AGENT"
+        },
+        {
+          "id": "HKOS_SC_Jade_Card_MOB_AGENT"
+        },
+        {
+          "id": "HKOS_EN_Jade_BankingMaint_MOB_AGENT"
+        },
+        {
+          "id": "HKOS_TC_Jade_BankingMaint_MOB_AGENT"
+        },
+        {
+          "id": "HKOS_SC_Jade_BankingMaint_MOB_AGENT"
+        },
+        {
+          "id": "HKOS_EN_Jade_CardsMaint_MOB_AGENT"
+        },
+        {
+          "id": "HKOS_TC_Jade_CardsMaint_MOB_AGENT"
+        },
+        {
+          "id": "HKOS_SC_Jade_CardsMaint_MOB_AGENT"
+        },
+        {
+          "id": "HKOS_EN_Jade_MPF_MOB_AGENT"
+        },
+        {
+          "id": "HKOS_TC_Jade_MPF_MOB_AGENT"
+        },
+        {
+          "id": "HKOS_SC_Jade_MPF_MOB_AGENT"
+        },
+        {
+          "id": "HKCC_EN_Jade_IPO_MOB_AGENT"
+        },
+        {
+          "id": "HKCC_TC_Jade_IPO_MOB_AGENT"
+        },
+        {
+          "id": "HKCC_SC_Jade_IPO_MOB_AGENT"
+        },
+        {
+          "id": "HKCC_EN_Jade_Insurance-Sales_MOB_AGENT"
+        },
+        {
+          "id": "HKCC_TC_Jade_Insurance-Sales_MOB_AGENT"
+        },
+        {
+          "id": "HKCC_SC_Jade_Insurance-Sales_MOB_AGENT"
+        },
+        {
+          "id": "HKCC_EN_Jade_Investment_MOB_AGENT"
+        },
+        {
+          "id": "HKCC_TC_Jade_Investment_MOB_AGENT"
+        },
+        {
+          "id": "HKCC_SC_Jade_Investment_MOB_AGENT"
+        },
+        {
+          "id": "HKCC_EN_Jade_Insurance_MOB_AGENT"
+        },
+        {
+          "id": "HKCC_TC_Jade_Insurance_MOB_AGENT"
+        },
+        {
+          "id": "HKCC_SC_Jade_Insurance_MOB_AGENT"
+        },
+        {
+          "id": "HKWC_EN_AL_WEALTH_MOB_Agent"
+        },
+        {
+          "id": "HKWC_SC_AL_WEALTH_MOB_Agent"
+        },
+        {
+          "id": "HKWC_TC_AL_WEALTH_MOB_Agent"
+        },
+        {
+          "id": "HKCC_EN_UnauthRouting_Web_Bot"
+        },
+        {
+          "id": "HKCC_EN_AuthRouting_Web_Bot"
+        },
+        {
+          "id": "HKCC_TC_UnauthRouting_Web_Bot"
+        },
+        {
+          "id": "HKCC_TC_AuthRouting_Web_Bot"
+        },
+        {
+          "id": "HKCC_SC_UnauthRouting_Web_Bot"
+        },
+        {
+          "id": "HKCC_SC_AuthRouting_Web_Bot"
+        },
+        {
+          "id": "Deep Link  POC Skill"
+        },
+        {
+          "id": "HKCC_SC_Auth_Routing_Web_Bot"
+        },
+        {
+          "id": "HKOS_EN_Chatbot_MOB_Bot"
+        },
+        {
+          "id": "HKOS_TC_Chatbot_MOB_Bot"
+        },
+        {
+          "id": "HKOS_SC_Chatbot_MOB_Bot"
+        },
+        {
+          "id": "HKOS_AL_ALL_WEALTH_MOB_RM"
+        },
+        {
+          "id": "HKOS_AL_ALL_WEALTH_MOB_RO"
+        },
+        {
+          "id": "Proactive Messaging POC Skill"
+        },
+        {
+          "id": "HKRM_AL_AL_WEALTH_Mob_Agent"
+        },
+        {
+          "id": "HKRO_AL_AL_WEALTH_Mob_Agent"
+        },
+        {
+          "id": "HKOS_EN_One_Banking_Web_AGENT"
+        },
+        {
+          "id": "HKOS_EN_One_Card_Web_AGENT"
+        },
+        {
+          "id": "HKOS_EN_One_MPF_Web_AGENT"
+        },
+        {
+          "id": "HKCC_EN_One_IPO_Web_AGENT"
+        },
+        {
+          "id": "HKCC_EN_One_Insurance-Sales_Web_AGENT"
+        },
+        {
+          "id": "HKCC_EN_One_Investment_Web_AGENT"
+        },
+        {
+          "id": "HKCC_EN_One_Insurance_Web_AGENT"
+        },
+        {
+          "id": "HKOS_EN_Jade_Banking_Web_AGENT"
+        },
+        {
+          "id": "HKOS_EN_Premier_Banking_Web_AGENT"
+        },
+        {
+          "id": "HKOS_EN_Jade_Card_Web_AGENT"
+        },
+        {
+          "id": "HKOS_EN_Premier_Card_Web_AGENT"
+        },
+        {
+          "id": "HKOS_EN_Jade_BankingMaint_Web_AGENT"
+        },
+        {
+          "id": "HKOS_EN_Premier_BankingMaint_Web_AGENT"
+        },
+        {
+          "id": "HKOS_EN_One_BankingMaint_Web_AGENT"
+        },
+        {
+          "id": "HKOS_EN_Jade_CardsMaint_Web_AGENT"
+        },
+        {
+          "id": "HKOS_EN_Premier_CardsMaint_Web_AGENT"
+        },
+        {
+          "id": "HKOS_EN_One_CardsMaint_Web_AGENT"
+        },
+        {
+          "id": "HKOS_EN_Jade_MPF_Web_AGENT"
+        },
+        {
+          "id": "HKOS_EN_Premier_MPF_Web_AGENT"
+        },
+        {
+          "id": "HKCC_EN_Jade_IPO_Web_AGENT"
+        },
+        {
+          "id": "HKCC_EN_Premier_IPO_Web_AGENT"
+        },
+        {
+          "id": "HKCC_EN_Jade_Insurance-Sales_Web_AGENT"
+        },
+        {
+          "id": "HKCC_EN_Premier_Insurance-Sales_Web_AGENT"
+        },
+        {
+          "id": "HKCC_EN_Jade_Investment_Web_AGENT"
+        },
+        {
+          "id": "HKCC_EN_Premier_Investment_Web_AGENT"
+        },
+        {
+          "id": "HKCC_EN_Jade_Insurance_Web_AGENT"
+        },
+        {
+          "id": "HKCC_EN_Premier_Insurance_Web_AGENT"
+        },
+        {
+          "id": "HKOS_TC_One_Banking_Web_AGENT"
+        },
+        {
+          "id": "HKOS_TC_One_Card_Web_AGENT"
+        },
+        {
+          "id": "HKOS_TC_One_MPF_Web_AGENT"
+        },
+        {
+          "id": "HKCC_TC_One_IPO_Web_AGENT"
+        },
+        {
+          "id": "HKCC_TC_One_Insurance-Sales_Web_AGENT"
+        },
+        {
+          "id": "HKCC_TC_One_Insurance_Web_AGENT"
+        },
+        {
+          "id": "HKOS_TC_Jade_Banking_Web_AGENT"
+        },
+        {
+          "id": "HKOS_TC_Premier_Banking_Web_AGENT"
+        },
+        {
+          "id": "HKOS_TC_Jade_Card_Web_AGENT"
+        },
+        {
+          "id": "HKOS_TC_Premier_Card_Web_AGENT"
+        },
+        {
+          "id": "HKOS_TC_Jade_BankingMaint_Web_AGENT"
+        },
+        {
+          "id": "HKOS_TC_Premier_BankingMaint_Web_AGENT"
+        },
+        {
+          "id": "HKOS_TC_One_BankingMaint_Web_AGENT"
+        },
+        {
+          "id": "HKOS_TC_Jade_CardsMaint_Web_AGENT"
+        },
+        {
+          "id": "HKOS_TC_Premier_CardsMaint_Web_AGENT"
+        },
+        {
+          "id": "HKOS_TC_One_CardsMaint_Web_AGENT"
+        },
+        {
+          "id": "HKOS_TC_Jade_MPF_Web_AGENT"
+        },
+        {
+          "id": "HKOS_TC_Premier_MPF_Web_AGENT"
+        },
+        {
+          "id": "HKCC_TC_Jade_IPO_Web_AGENT"
+        },
+        {
+          "id": "HKCC_TC_Premier_IPO_Web_AGENT"
+        },
+        {
+          "id": "HKCC_TC_Jade_Insurance-Sales_Web_AGENT"
+        },
+        {
+          "id": "HKCC_TC_Premier_Insurance-Sales_Web_AGENT"
+        },
+        {
+          "id": "HKCC_TC_Jade_Insurance_Web_AGENT"
+        },
+        {
+          "id": "HKCC_TC_Premier_Insurance_Web_AGENT"
+        },
+        {
+          "id": "HKOS_SC_One_Banking_Web_AGENT"
+        },
+        {
+          "id": "HKOS_SC_One_Card_Web_AGENT"
+        },
+        {
+          "id": "HKOS_SC_One_MPF_Web_AGENT"
+        },
+        {
+          "id": "HKCC_SC_One_IPO_Web_AGENT"
+        },
+        {
+          "id": "HKCC_SC_One_Insurance-Sales_Web_AGENT"
+        },
+        {
+          "id": "HKCC_SC_One_InvestmSCt_Web_AGENT"
+        },
+        {
+          "id": "HKCC_SC_One_Insurance_Web_AGENT"
+        },
+        {
+          "id": "HKOS_SC_Jade_Banking_Web_AGENT"
+        },
+        {
+          "id": "HKOS_SC_Premier_Banking_Web_AGENT"
+        },
+        {
+          "id": "HKOS_SC_Jade_Card_Web_AGENT"
+        },
+        {
+          "id": "HKOS_SC_Premier_Card_Web_AGENT"
+        },
+        {
+          "id": "HKOS_SC_Jade_BankingMaint_Web_AGENT"
+        },
+        {
+          "id": "HKOS_SC_Premier_BankingMaint_Web_AGENT"
+        },
+        {
+          "id": "HKOS_SC_One_BankingMaint_Web_AGENT"
+        },
+        {
+          "id": "HKOS_SC_Jade_CardsMaint_Web_AGENT"
+        },
+        {
+          "id": "HKOS_SC_Premier_CardsMaint_Web_AGENT"
+        },
+        {
+          "id": "HKOS_SC_One_CardsMaint_Web_AGENT"
+        },
+        {
+          "id": "HKOS_SC_Jade_MPF_Web_AGENT"
+        },
+        {
+          "id": "HKOS_SC_Premier_MPF_Web_AGENT"
+        },
+        {
+          "id": "HKCC_SC_Jade_IPO_Web_AGENT"
+        },
+        {
+          "id": "HKCC_SC_Premier_IPO_Web_AGENT"
+        },
+        {
+          "id": "HKCC_SC_Jade_Insurance-Sales_Web_AGENT"
+        },
+        {
+          "id": "HKCC_SC_Premier_Insurance-Sales_Web_AGENT"
+        },
+        {
+          "id": "HKCC_SC_Jade_Insurance_Web_AGENT"
+        },
+        {
+          "id": "HKCC_SC_Premier_Insurance_Web_AGENT"
+        },
+        {
+          "id": "lp_naming_bot"
+        },
+        {
+          "id": "HKCC_EN_Jade_SAAS_Web_AGENT"
+        },
+        {
+          "id": "HKCC_TC_Jade_SAAS_Web_AGENT"
+        },
+        {
+          "id": "HKCC_SC_Jade_SAAS_Web_AGENT"
+        },
+        {
+          "id": "HKCC_EN_Premier_SAAS_Web_AGENT"
+        },
+        {
+          "id": "HKCC_TC_Premier_SAAS_Web_AGENT"
+        },
+        {
+          "id": "HKCC_SC_Premier_SAAS_Web_AGENT"
+        },
+        {
+          "id": "HKCC_EN_One_SAAS_Web_AGENT"
+        },
+        {
+          "id": "HKCC_TC_One_SAAS_Web_AGENT"
+        },
+        {
+          "id": "HKCC_SC_One_SAAS_Web_AGENT"
+        },
+        {
+          "id": "HKCC_EN_One_PayMe_Web_AGENT"
+        },
+        {
+          "id": "HKCC_TC_One_PayMe_Web_AGENT"
+        },
+        {
+          "id": "HKCC_SC_One_PayMe_Web_AGENT"
+        },
+        {
+          "id": "HKCC_TC_One_Investment_Web_Agent"
+        },
+        {
+          "id": "HKCC_SC_One_Investment_Web_Agent"
+        },
+        {
+          "id": "lp_naming_bot_target"
+        },
+        {
+          "id": "HKCC_SC_Jade_Investment_Web_AGENT"
+        },
+        {
+          "id": "HKCC_SC_Premier_Investment_Web_AGENT"
+        },
+        {
+          "id": "HKCC_TC_Jade_Investment_Web_AGENT"
+        },
+        {
+          "id": "HKCC_TC_Premier_Investment_Web_AGENT"
+        },
+        {
+          "id": "HKWC_EN_AL_WEALTH_Web_AGENT"
+        },
+        {
+          "id": "HKWC_TC_AL_WEALTH_Web_AGENT"
+        },
+        {
+          "id": "HKWC_SC_AL_WEALTH_Web_AGENT"
+        },
+        {
+          "id": "HKRM_EN_Premier_WEALTH_Mob_Agent"
+        },
+        {
+          "id": "HKRM_TC_Premier_WEALTH_Mob_Agent"
+        },
+        {
+          "id": "HKRM_SC_Premier_WEALTH_Mob_Agent"
+        },
+        {
+          "id": "HKRO_EN_Premier_WEALTH_Mob_Agent"
+        },
+        {
+          "id": "HKRO_TC_Premier_WEALTH_Mob_Agent"
+        },
+        {
+          "id": "HKRO_SC_Premier_WEALTH_Mob_Agent"
+        },
+        {
+          "id": "HKRM_EN_Jade_WEALTH_Mob_Agent"
+        },
+        {
+          "id": "HKRM_TC_Jade_WEALTH_Mob_Agent"
+        },
+        {
+          "id": "HKRM_SC_Jade_WEALTH_Mob_Agent"
+        },
+        {
+          "id": "HKRO_EN_Jade_WEALTH_Mob_Agent"
+        },
+        {
+          "id": "HKRO_TC_Jade_WEALTH_Mob_Agent"
+        },
+        {
+          "id": "HKRO_SC_Jade_WEALTH_Mob_Agent"
+        },
+        {
+          "id": "chatbot"
+        },
+        {
+          "id": "Chatbot_MOB"
+        },
+        {
+          "id": "HKRM_TC_VRM_WEALTH_Mob_Agent"
+        },
+        {
+          "id": "HKRM_SC_VRM_WEALTH_Mob_Agent"
+        },
+        {
+          "id": "HKRM_TC_Premier_VirtualWEALTH_Mob_Agent"
+        },
+        {
+          "id": "HKRM_SC_Premier_VirtualWEALTH_Mob_Agent"
+        },
+        {
+          "id": "HKRM_EN_Premier_VirtualWEALTH_Mob_Agent"
+        },
+        {
+          "id": "CCB training skill"
+        },
+        {
+          "id": "CCB_EN_training_skill"
+        },
+        {
+          "id": "CCB_TC_training_skill"
+        },
+        {
+          "id": "CCB_SC_training_skill"
+        },
+        {
+          "id": "lpBot-DEV"
+        },
+        {
+          "id": "HKOS_EN_One_Banking_Web_AGEN"
+        },
+        {
+          "id": "Testing Uat1"
+        },
+        {
+          "id": "HKUS_TC_One_Investment_MOB_Bot"
+        },
+        {
+          "id": "HKOS_EN_Jade_SAAS_Web_AGENT"
+        },
+        {
+          "id": "HKOS_TC_Jade_SAAS_Web_AGENT"
+        },
+        {
+          "id": "HKOS_SC_Jade_SAAS_Web_AGENT"
+        },
+        {
+          "id": "HKOS_EN_Premier_SAAS_Web_AGENT"
+        },
+        {
+          "id": "HKOS_TC_Premier_SAAS_Web_AGENT"
+        },
+        {
+          "id": "HKOS_SC_Premier_SAAS_Web_AGENT"
+        },
+        {
+          "id": "HKOS_EN_One_SAAS_Web_AGENT"
+        },
+        {
+          "id": "HKOS_TC_One_SAAS_Web_AGENT"
+        },
+        {
+          "id": "HKOS_SC_One_SAAS_Web_AGENT"
+        },
+        {
+          "id": "namePassTest"
+        },
+        {
+          "id": "stepup_poc_skill"
+        },
+        {
+          "id": "HKCC_EN_One_PayMe_Web_AGENT_OFFhrFollowUp"
+        },
+        {
+          "id": "HKCC_TC_One_PayMe_Web_AGENT_OFFhrFollowUp"
+        },
+        {
+          "id": "HKCC_EN_One_WEALTH_Web_AGENT_OFFhrFollowUp"
+        },
+        {
+          "id": "HKWC_EN_One_WEALTH_Web_AGENT_OFFhrFollowUp"
+        },
+        {
+          "id": "HKWC_TC_One_WEALTH_Web_AGENT_OFFhrFollowUp"
+        },
+        {
+          "id": "HKWC_EN_AL_WEALTH_Web_AGENT_OFFhrFollowUp"
+        },
+        {
+          "id": "HKWC_EN_AL_WEALTH_MOB_Agent_OFFhrFollowUp"
+        },
+        {
+          "id": "lpbot-DEV_EN"
+        },
+        {
+          "id": "lpbot-DEV_TC"
+        },
+        {
+          "id": "lpbot-DEV_SC"
+        }
+      ],
+      "toRemoveFromTarget": [],
+      "toAddToTarget": [
+        "Banking",
+        "Escalation",
+        "RBWM_HK_Service-IPO_MobileChat",
+        "RBWM_HK_Sales-Insurance Pre-sales_MobileChat",
+        "RBWM_HK_Service-Full Investment_MobileChat",
+        "RBWM_HK_Sales-Full Insurance_MobileChat",
+        "RBWM_GZC_Service-Banking_MobileChat",
+        "RBWM_GZC_Service-Credit Card_MobileChat",
+        "RBWM_GZC_Service-MPF_MobileChat",
+        "RBWM_Routing-Service_Bot",
+        "HKOS_EN_ProductSupport_WhatsApp_Agent",
+        "HKOS_TC_ProductSupport_WhatsApp_Agent",
+        "HKOS_SC_ProductSupport_WhatsApp_Agent",
+        "HKOS_EN_Service_Banking_WhatsApp_Agent",
+        "HKOS_EN_Service-Credit Card_WhatsApp_Agent",
+        "HKOS_EN_Service-MPF_WhatsApp_Agent",
+        "HKCC_EN_Sales-Full Insurance_WhatsApp_Agent",
+        "HKCC_EN_Sales-Insurance Pre-sales_WhatsApp_Agent",
+        "HKCC_EN_Service-Full Investment_WhatsApp_Agent",
+        "HKCC_EN_Service-IPO_WhatsApp_Agent",
+        "HKOS_TC_Service_Banking_WhatsApp__Agent",
+        "HKOS_TC_Service-Credit Card_WhatsApp_Agent",
+        "HKOS_TC_Service-MPF_WhatsApp_Agent",
+        "HKCC_TC_Sales-Full Insurance_WhatsApp_Agent",
+        "HKCC_TC_Sales-Insurance Pre-sales_WhatsApp_Agent",
+        "HKCC_TC_Service-Full Investment_WhatsApp_Agent",
+        "HKCC_TC_Service-IPO_WhatsApp_Agent",
+        "HKOS_SC_Service_Banking_WhatsApp_Agent",
+        "HKOS_SC_Service-Credit Card_WhatsApp_Agent",
+        "HKOS_SC_Service-MPF_WhatsApp_Agent",
+        "HKCC_SC_Sales-Full Insurance_WhatsApp_Agent",
+        "HKCC_SC_Sales-Insurance Pre-sales_WhatsApp_Agent",
+        "HKCC_SC_Service-Full Investment_WhatsApp_Agent",
+        "HKCC_SC_Service-IPO_WhatsApp_Agent",
+        "RBWM_Mobile_Chat_Bot",
+        "HKOS_TC_Service_Banking_WhatsApp_Agent",
+        "RBWM_GZC_Service-Banking_MobileChat_EN",
+        "RBWM_GZC_Service-Banking_MobileChat_TC",
+        "RBWM_GZC_Service-Banking_MobileChat_SC",
+        "RBWM_GZC_Service-Credit Card_MobileChat_EN",
+        "RBWM_GZC_Service-Credit Card_MobileChat_TC",
+        "RBWM_GZC_Service-Credit Card_MobileChat_SC",
+        "RBWM_GZC_Service-MPF_MobileChat_EN",
+        "RBWM_GZC_Service-MPF_MobileChat_TC",
+        "RBWM_GZC_Service-MPF_MobileChat_SC",
+        "RBWM_HK_Service-IPO_MobileChat_EN",
+        "RBWM_HK_Service-IPO_MobileChat_TC",
+        "RBWM_HK_Service-IPO_MobileChat_SC",
+        "RBWM_HK_Sales-Insurance Pre-sales_MobileChat_EN",
+        "RBWM_HK_Sales-Insurance Pre-sales_MobileChat_TC",
+        "RBWM_HK_Sales-Insurance Pre-sales_MobileChat_SC",
+        "RBWM_HK_Service-Full Investment_MobileChat_EN",
+        "RBWM_HK_Service-Full Investment_MobileChat_TC",
+        "RBWM_HK_Service-Full Investment_MobileChat_SC",
+        "RBWM_HK_Sales-Full Insurance_MobileChat_EN",
+        "RBWM_HK_Sales-Full Insurance_MobileChat_TC",
+        "RBWM_HK_Sales-Full Insurance_MobileChat_SC",
+        "RBWM_GZC_Service-Maintenance_MobileChat",
+        "RBWM_GZC_Service-Maintenance_MobileChat_EN",
+        "RBWM_GZC_Service-Maintenance_MobileChat_TC",
+        "RBWM_GZC_Service-Maintenance_MobileChat_SC",
+        "RBWM_Messaging_Chat_Bot",
+        "AMH_EN_BotTransfer",
+        "HKOS_EN_One_Banking_MOB_AGENT",
+        "HKOS_TC_One_Banking_MOB_AGENT",
+        "HKOS_SC_One_Banking_MOB_AGENT",
+        "HKOS_EN_One_Card_MOB_AGENT",
+        "HKOS_TC_One_Card_MOB_AGENT",
+        "HKOS_SC_One_Card_MOB_AGENT",
+        "HKOS_EN_One_BankingMaint_MOB_AGENT",
+        "HKOS_TC_One_BankingMaint_MOB_AGENT",
+        "HKOS_SC_One_BankingMaint_MOB_AGENT",
+        "HKOS_EN_One_CardsMaint_MOB_AGENT",
+        "HKOS_TC_One_CardsMaint_MOB_AGENT",
+        "HKOS_SC_One_CardsMaint_MOB_AGENT",
+        "HKOS_EN_One_MPF_MOB_AGENT",
+        "HKOS_TC_One_MPF_MOB_AGENT",
+        "HKOS_SC_One_MPF_MOB_AGENT",
+        "HKCC_EN_One_IPO_MOB_AGENT",
+        "HKCC_TC_One_IPO_MOB_AGENT",
+        "HKCC_SC_One_IPO_MOB_AGENT",
+        "HKCC_EN_One_Insurance-Sales_MOB_AGENT",
+        "HKCC_TC_One_Insurance-Sales_MOB_AGENT",
+        "HKCC_SC_One_Insurance-Sales_MOB_AGENT",
+        "HKCC_EN_One_Investment_MOB_AGENT",
+        "HKCC_TC_One_Investment_MOB_AGENT",
+        "HKCC_SC_One_Investment_MOB_AGENT",
+        "HKCC_EN_One_Insurance_MOB_AGENT",
+        "HKCC_TC_One_Insurance_MOB_AGENT",
+        "HKCC_SC_One_Insurance_MOB_AGENT",
+        "HKOS_EN_Premier_Banking_MOB_AGENT",
+        "HKOS_TC_Premier_Banking_MOB_AGENT",
+        "HKOS_SC_Premier_Banking_MOB_AGENT",
+        "HKOS_EN_Premier_Card_MOB_AGENT",
+        "HKOS_TC_Premier_Card_MOB_AGENT",
+        "HKOS_SC_Premier_Card_MOB_AGENT",
+        "HKOS_EN_Premier_BankingMaint_MOB_AGENT",
+        "HKOS_TC_Premier_BankingMaint_MOB_AGENT",
+        "HKOS_SC_Premier_BankingMaint_MOB_AGENT",
+        "HKOS_EN_Premier_CardsMaint_MOB_AGENT",
+        "HKOS_TC_Premier_CardsMaint_MOB_AGENT",
+        "HKOS_SC_Premier_CardsMaint_MOB_AGENT",
+        "HKOS_EN_Premier_MPF_MOB_AGENT",
+        "HKOS_TC_Premier_MPF_MOB_AGENT",
+        "HKOS_SC_Premier_MPF_MOB_AGENT",
+        "HKCC_EN_Premier_IPO_MOB_AGENT",
+        "HKCC_TC_Premier_IPO_MOB_AGENT",
+        "HKCC_SC_Premier_IPO_MOB_AGENT",
+        "HKCC_EN_Premier_Insurance-Sales_MOB_AGENT",
+        "HKCC_TC_Premier_Insurance-Sales_MOB_AGENT",
+        "HKCC_SC_Premier_Insurance-Sales_MOB_AGENT",
+        "HKCC_EN_Premier_Investment_MOB_AGENT",
+        "HKCC_TC_Premier_Investment_MOB_AGENT",
+        "HKCC_SC_Premier_Investment_MOB_AGENT",
+        "HKCC_EN_Premier_Insurance_MOB_AGENT",
+        "HKCC_TC_Premier_Insurance_MOB_AGENT",
+        "HKCC_SC_Premier_Insurance_MOB_AGENT",
+        "HKOS_EN_Jade_Banking_MOB_AGENT",
+        "HKOS_TC_Jade_Banking_MOB_AGENT",
+        "HKOS_SC_Jade_Banking_MOB_AGENT",
+        "HKOS_EN_Jade_Card_MOB_AGENT",
+        "HKOS_TC_Jade_Card_MOB_AGENT",
+        "HKOS_SC_Jade_Card_MOB_AGENT",
+        "HKOS_EN_Jade_BankingMaint_MOB_AGENT",
+        "HKOS_TC_Jade_BankingMaint_MOB_AGENT",
+        "HKOS_SC_Jade_BankingMaint_MOB_AGENT",
+        "HKOS_EN_Jade_CardsMaint_MOB_AGENT",
+        "HKOS_TC_Jade_CardsMaint_MOB_AGENT",
+        "HKOS_SC_Jade_CardsMaint_MOB_AGENT",
+        "HKOS_EN_Jade_MPF_MOB_AGENT",
+        "HKOS_TC_Jade_MPF_MOB_AGENT",
+        "HKOS_SC_Jade_MPF_MOB_AGENT",
+        "HKCC_EN_Jade_IPO_MOB_AGENT",
+        "HKCC_TC_Jade_IPO_MOB_AGENT",
+        "HKCC_SC_Jade_IPO_MOB_AGENT",
+        "HKCC_EN_Jade_Insurance-Sales_MOB_AGENT",
+        "HKCC_TC_Jade_Insurance-Sales_MOB_AGENT",
+        "HKCC_SC_Jade_Insurance-Sales_MOB_AGENT",
+        "HKCC_EN_Jade_Investment_MOB_AGENT",
+        "HKCC_TC_Jade_Investment_MOB_AGENT",
+        "HKCC_SC_Jade_Investment_MOB_AGENT",
+        "HKCC_EN_Jade_Insurance_MOB_AGENT",
+        "HKCC_TC_Jade_Insurance_MOB_AGENT",
+        "HKCC_SC_Jade_Insurance_MOB_AGENT",
+        "HKWC_EN_AL_WEALTH_MOB_Agent",
+        "HKWC_SC_AL_WEALTH_MOB_Agent",
+        "HKWC_TC_AL_WEALTH_MOB_Agent",
+        "HKCC_EN_UnauthRouting_Web_Bot",
+        "HKCC_EN_AuthRouting_Web_Bot",
+        "HKCC_TC_UnauthRouting_Web_Bot",
+        "HKCC_TC_AuthRouting_Web_Bot",
+        "HKCC_SC_UnauthRouting_Web_Bot",
+        "HKCC_SC_AuthRouting_Web_Bot",
+        "Deep Link  POC Skill",
+        "HKCC_SC_Auth_Routing_Web_Bot",
+        "HKOS_EN_Chatbot_MOB_Bot",
+        "HKOS_TC_Chatbot_MOB_Bot",
+        "HKOS_SC_Chatbot_MOB_Bot",
+        "HKOS_AL_ALL_WEALTH_MOB_RM",
+        "HKOS_AL_ALL_WEALTH_MOB_RO",
+        "Proactive Messaging POC Skill",
+        "HKRM_AL_AL_WEALTH_Mob_Agent",
+        "HKRO_AL_AL_WEALTH_Mob_Agent",
+        "HKOS_EN_One_Banking_Web_AGENT",
+        "HKOS_EN_One_Card_Web_AGENT",
+        "HKOS_EN_One_MPF_Web_AGENT",
+        "HKCC_EN_One_IPO_Web_AGENT",
+        "HKCC_EN_One_Insurance-Sales_Web_AGENT",
+        "HKCC_EN_One_Investment_Web_AGENT",
+        "HKCC_EN_One_Insurance_Web_AGENT",
+        "HKOS_EN_Jade_Banking_Web_AGENT",
+        "HKOS_EN_Premier_Banking_Web_AGENT",
+        "HKOS_EN_Jade_Card_Web_AGENT",
+        "HKOS_EN_Premier_Card_Web_AGENT",
+        "HKOS_EN_Jade_BankingMaint_Web_AGENT",
+        "HKOS_EN_Premier_BankingMaint_Web_AGENT",
+        "HKOS_EN_One_BankingMaint_Web_AGENT",
+        "HKOS_EN_Jade_CardsMaint_Web_AGENT",
+        "HKOS_EN_Premier_CardsMaint_Web_AGENT",
+        "HKOS_EN_One_CardsMaint_Web_AGENT",
+        "HKOS_EN_Jade_MPF_Web_AGENT",
+        "HKOS_EN_Premier_MPF_Web_AGENT",
+        "HKCC_EN_Jade_IPO_Web_AGENT",
+        "HKCC_EN_Premier_IPO_Web_AGENT",
+        "HKCC_EN_Jade_Insurance-Sales_Web_AGENT",
+        "HKCC_EN_Premier_Insurance-Sales_Web_AGENT",
+        "HKCC_EN_Jade_Investment_Web_AGENT",
+        "HKCC_EN_Premier_Investment_Web_AGENT",
+        "HKCC_EN_Jade_Insurance_Web_AGENT",
+        "HKCC_EN_Premier_Insurance_Web_AGENT",
+        "HKOS_TC_One_Banking_Web_AGENT",
+        "HKOS_TC_One_Card_Web_AGENT",
+        "HKOS_TC_One_MPF_Web_AGENT",
+        "HKCC_TC_One_IPO_Web_AGENT",
+        "HKCC_TC_One_Insurance-Sales_Web_AGENT",
+        "HKCC_TC_One_Insurance_Web_AGENT",
+        "HKOS_TC_Jade_Banking_Web_AGENT",
+        "HKOS_TC_Premier_Banking_Web_AGENT",
+        "HKOS_TC_Jade_Card_Web_AGENT",
+        "HKOS_TC_Premier_Card_Web_AGENT",
+        "HKOS_TC_Jade_BankingMaint_Web_AGENT",
+        "HKOS_TC_Premier_BankingMaint_Web_AGENT",
+        "HKOS_TC_One_BankingMaint_Web_AGENT",
+        "HKOS_TC_Jade_CardsMaint_Web_AGENT",
+        "HKOS_TC_Premier_CardsMaint_Web_AGENT",
+        "HKOS_TC_One_CardsMaint_Web_AGENT",
+        "HKOS_TC_Jade_MPF_Web_AGENT",
+        "HKOS_TC_Premier_MPF_Web_AGENT",
+        "HKCC_TC_Jade_IPO_Web_AGENT",
+        "HKCC_TC_Premier_IPO_Web_AGENT",
+        "HKCC_TC_Jade_Insurance-Sales_Web_AGENT",
+        "HKCC_TC_Premier_Insurance-Sales_Web_AGENT",
+        "HKCC_TC_Jade_Insurance_Web_AGENT",
+        "HKCC_TC_Premier_Insurance_Web_AGENT",
+        "HKOS_SC_One_Banking_Web_AGENT",
+        "HKOS_SC_One_Card_Web_AGENT",
+        "HKOS_SC_One_MPF_Web_AGENT",
+        "HKCC_SC_One_IPO_Web_AGENT",
+        "HKCC_SC_One_Insurance-Sales_Web_AGENT",
+        "HKCC_SC_One_InvestmSCt_Web_AGENT",
+        "HKCC_SC_One_Insurance_Web_AGENT",
+        "HKOS_SC_Jade_Banking_Web_AGENT",
+        "HKOS_SC_Premier_Banking_Web_AGENT",
+        "HKOS_SC_Jade_Card_Web_AGENT",
+        "HKOS_SC_Premier_Card_Web_AGENT",
+        "HKOS_SC_Jade_BankingMaint_Web_AGENT",
+        "HKOS_SC_Premier_BankingMaint_Web_AGENT",
+        "HKOS_SC_One_BankingMaint_Web_AGENT",
+        "HKOS_SC_Jade_CardsMaint_Web_AGENT",
+        "HKOS_SC_Premier_CardsMaint_Web_AGENT",
+        "HKOS_SC_One_CardsMaint_Web_AGENT",
+        "HKOS_SC_Jade_MPF_Web_AGENT",
+        "HKOS_SC_Premier_MPF_Web_AGENT",
+        "HKCC_SC_Jade_IPO_Web_AGENT",
+        "HKCC_SC_Premier_IPO_Web_AGENT",
+        "HKCC_SC_Jade_Insurance-Sales_Web_AGENT",
+        "HKCC_SC_Premier_Insurance-Sales_Web_AGENT",
+        "HKCC_SC_Jade_Insurance_Web_AGENT",
+        "HKCC_SC_Premier_Insurance_Web_AGENT",
+        "lp_naming_bot",
+        "HKCC_EN_Jade_SAAS_Web_AGENT",
+        "HKCC_TC_Jade_SAAS_Web_AGENT",
+        "HKCC_SC_Jade_SAAS_Web_AGENT",
+        "HKCC_EN_Premier_SAAS_Web_AGENT",
+        "HKCC_TC_Premier_SAAS_Web_AGENT",
+        "HKCC_SC_Premier_SAAS_Web_AGENT",
+        "HKCC_EN_One_SAAS_Web_AGENT",
+        "HKCC_TC_One_SAAS_Web_AGENT",
+        "HKCC_SC_One_SAAS_Web_AGENT",
+        "HKCC_EN_One_PayMe_Web_AGENT",
+        "HKCC_TC_One_PayMe_Web_AGENT",
+        "HKCC_SC_One_PayMe_Web_AGENT",
+        "HKCC_TC_One_Investment_Web_Agent",
+        "HKCC_SC_One_Investment_Web_Agent",
+        "lp_naming_bot_target",
+        "HKCC_SC_Jade_Investment_Web_AGENT",
+        "HKCC_SC_Premier_Investment_Web_AGENT",
+        "HKCC_TC_Jade_Investment_Web_AGENT",
+        "HKCC_TC_Premier_Investment_Web_AGENT",
+        "HKWC_EN_AL_WEALTH_Web_AGENT",
+        "HKWC_TC_AL_WEALTH_Web_AGENT",
+        "HKWC_SC_AL_WEALTH_Web_AGENT",
+        "HKRM_EN_Premier_WEALTH_Mob_Agent",
+        "HKRM_TC_Premier_WEALTH_Mob_Agent",
+        "HKRM_SC_Premier_WEALTH_Mob_Agent",
+        "HKRO_EN_Premier_WEALTH_Mob_Agent",
+        "HKRO_TC_Premier_WEALTH_Mob_Agent",
+        "HKRO_SC_Premier_WEALTH_Mob_Agent",
+        "HKRM_EN_Jade_WEALTH_Mob_Agent",
+        "HKRM_TC_Jade_WEALTH_Mob_Agent",
+        "HKRM_SC_Jade_WEALTH_Mob_Agent",
+        "HKRO_EN_Jade_WEALTH_Mob_Agent",
+        "HKRO_TC_Jade_WEALTH_Mob_Agent",
+        "HKRO_SC_Jade_WEALTH_Mob_Agent",
+        "chatbot",
+        "Chatbot_MOB",
+        "HKRM_TC_VRM_WEALTH_Mob_Agent",
+        "HKRM_SC_VRM_WEALTH_Mob_Agent",
+        "HKRM_TC_Premier_VirtualWEALTH_Mob_Agent",
+        "HKRM_SC_Premier_VirtualWEALTH_Mob_Agent",
+        "HKRM_EN_Premier_VirtualWEALTH_Mob_Agent",
+        "CCB training skill",
+        "CCB_EN_training_skill",
+        "CCB_TC_training_skill",
+        "CCB_SC_training_skill",
+        "lpBot-DEV",
+        "HKOS_EN_One_Banking_Web_AGEN",
+        "Testing Uat1",
+        "HKUS_TC_One_Investment_MOB_Bot",
+        "HKOS_EN_Jade_SAAS_Web_AGENT",
+        "HKOS_TC_Jade_SAAS_Web_AGENT",
+        "HKOS_SC_Jade_SAAS_Web_AGENT",
+        "HKOS_EN_Premier_SAAS_Web_AGENT",
+        "HKOS_TC_Premier_SAAS_Web_AGENT",
+        "HKOS_SC_Premier_SAAS_Web_AGENT",
+        "HKOS_EN_One_SAAS_Web_AGENT",
+        "HKOS_TC_One_SAAS_Web_AGENT",
+        "HKOS_SC_One_SAAS_Web_AGENT",
+        "namePassTest",
+        "stepup_poc_skill",
+        "HKCC_EN_One_PayMe_Web_AGENT_OFFhrFollowUp",
+        "HKCC_TC_One_PayMe_Web_AGENT_OFFhrFollowUp",
+        "HKCC_EN_One_WEALTH_Web_AGENT_OFFhrFollowUp",
+        "HKWC_EN_One_WEALTH_Web_AGENT_OFFhrFollowUp",
+        "HKWC_TC_One_WEALTH_Web_AGENT_OFFhrFollowUp",
+        "HKWC_EN_AL_WEALTH_Web_AGENT_OFFhrFollowUp",
+        "HKWC_EN_AL_WEALTH_MOB_Agent_OFFhrFollowUp",
+        "lpbot-DEV_EN",
+        "lpbot-DEV_TC",
+        "lpbot-DEV_SC"
+      ],
+      "sourceAccountRevision": 8572,
+      "targetAccountRevision": 0,
+      "nonWhitelistedIds": [],
+      "dependents": []
+    }
+  ]
+}

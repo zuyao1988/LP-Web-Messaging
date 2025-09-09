@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- optimized meta tag -->
+  <meta name="viewport" content="user-scalable=0, width=device-width, initial-scale=1.0,  minimum-scale=1.0, maximum-scale=1.0">
+ 
+  <title> LE Tag Code Pack - Web Messaging</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+ <!-- le-mtagconfig.js must be called from every page. Please update src accordingly -->
+  
+<!-- BEGIN LivePerson Monitor. -->
+<script type="text/javascript">window.lpTag=window.lpTag||{},'undefined'==typeof window.lpTag._tagCount?(window.lpTag={wl:lpTag.wl||null,scp:lpTag.scp||null,site:'15531115'||'',section:lpTag.section||'',tagletSection:lpTag.tagletSection||null,autoStart:lpTag.autoStart!==!1,ovr:lpTag.ovr||{},_v:'1.10.0',_tagCount:1,protocol:'https:',events:{bind:function(t,e,i){lpTag.defer(function(){lpTag.events.bind(t,e,i)},0)},trigger:function(t,e,i){lpTag.defer(function(){lpTag.events.trigger(t,e,i)},1)}},defer:function(t,e){0===e?(this._defB=this._defB||[],this._defB.push(t)):1===e?(this._defT=this._defT||[],this._defT.push(t)):(this._defL=this._defL||[],this._defL.push(t))},load:function(t,e,i){var n=this;setTimeout(function(){n._load(t,e,i)},0)},_load:function(t,e,i){var n=t;t||(n=this.protocol+'//'+(this.ovr&&this.ovr.domain?this.ovr.domain:'lptag.liveperson.net')+'/tag/tag.js?site='+this.site);var o=document.createElement('script');o.setAttribute('charset',e?e:'UTF-8'),i&&o.setAttribute('id',i),o.setAttribute('src',n),document.getElementsByTagName('head').item(0).appendChild(o)},init:function(){this._timing=this._timing||{},this._timing.start=(new Date).getTime();var t=this;window.attachEvent?window.attachEvent('onload',function(){t._domReady('domReady')}):(window.addEventListener('DOMContentLoaded',function(){t._domReady('contReady')},!1),window.addEventListener('load',function(){t._domReady('domReady')},!1)),'undefined'===typeof window._lptStop&&this.load()},start:function(){this.autoStart=!0},_domReady:function(t){this.isDom||(this.isDom=!0,this.events.trigger('LPT','DOM_READY',{t:t})),this._timing[t]=(new Date).getTime()},vars:lpTag.vars||[],dbs:lpTag.dbs||[],ctn:lpTag.ctn||[],sdes:lpTag.sdes||[],hooks:lpTag.hooks||[],identities:lpTag.identities||[],ev:lpTag.ev||[]},lpTag.init()):window.lpTag._tagCount+=1;</script>
+<!-- END LivePerson Monitor. -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+  <script type="text/javascript">
+    // lpTag.autoStart = false;
+  
+
+
+    function deParam(str) {
+      return (str || document.location.search).replace(/(^\?)/,'').split("&").map(function(n){return n = n.split("="),this[n[0]] = n[1],this}.bind({}))[0];
+    }
+
+    function getParameterByName(name, url) {
+      if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+      var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),results = regex.exec(url);
+      if (!results) 
+        return null;
+      if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+
+   var cnf = {
+      redirectURI: document.location.href.split('/').pop() == "" ? window.location.origin + '/web-messaging-bank-portal.html' : document.location.href.replace('web-messaging-login-page.html', 'web-messaging-bank-portal.html'),
+      // redirectURI: 'http://localhost:8082/web-messaging-bank-portal.html',
+      authURI: "https://dev-izkao4-v.au.auth0.com/authorize",
+      clientID: "9QGDzw0SnsUs4jRK3hBjNs1aEBpxncWY",
+      connection: "Username-Password-Authentication",
+      grantType: "password",
+      nonce: "LiveEngage",
+      scope: "openid profile",
+      responseType: "id_token"    //// responseType:"code" for codeflow/ id_token 
+    };
+
+    var hashParam = deParam(window.location.hash.substr(1));
+    var code = getParameterByName('code');
+    var idtoken = hashParam.id_token;
+
+    window.lpLoginUser = function() {
+      console.log(cnf);
+      
+      var lpSite = document.getElementById('accountId').value; 
+      // var sectionId = document.getElementById('sectionId').value; 
+      $.cookie('lpSite', lpSite ); 
+      // $.cookie('sectionId', sectionId ); 
+      // alert($.cookie('lpSite'));
+      
+      document.location = cnf.authURI + "?" + $.param({
+        redirect_uri: cnf.redirectURI,
+        client_id: cnf.clientID,
+        connection: cnf.connection,
+        grant_type: cnf.grantType,
+        nonce: cnf.nonce,
+        scope: cnf.scope,
+        response_type: cnf.responseType
+
+      });
+
+    };
+
+ // Start Tag or not...
+ $(document).ready(function() {
+    /*if(typeof idtoken !== 'undefined'){
+      // Logged in with Token
+      console.log("have id_token");
+      document.getElementById("idToken").value = idtoken;
+    
+      var toLogin = document.getElementById('toLogin');
+      toLogin.style.visibility = 'hidden';
+      var loggedIn = document.getElementById('loggedIn');
+      loggedIn.style.visibility = 'visible';
+        
+    } else {*/
+      // Need to login and collect Token
+      console.log("no id_token"); 
+      document.getElementById('loginButton').style.display="block";
+      document.getElementById("idToken").value = "";
+        
+      var toLogin = document.getElementById('toLogin');
+      toLogin.style.visibility = 'visible';
+      var loggedIn = document.getElementById('loggedIn');
+      loggedIn.style.visibility = 'hidden';
+    //}
+
+    lpTag.site = $.cookie('lpSite') ||  lpTag.site;
+    if(lpTag.site !== undefined && lpTag.site !== '') {
+      document.getElementById("accountId").value = lpTag.site;
+
+      console.log("did i get the right site id? site id is currently " + lpTag.site);
+      lpTag.section = [ "web", "messaging" ];
+    }
+
+  });
+
+ </script>
+</head>
+<body>
+
+ <script type="text/javascript">
+  lpTag.sdes = lpTag.sdes||[];  //Always include the declaration of the SDE's array.
+
+  lpTag.section = ["singtel"];
+  document.addEventListener("DOMContentLoaded", function(event) {
+    console.log("++DOMContentLoaded++")
+
+    var mahavir = () => {
+      console.log("++mahavir++")
+    }
+    // Your code to run since DOM is loaded and ready
+  });
+</script>
+<div id="loginBox">
+    <p><img src="livebank-logo.png"></img></p>
+    <div id="toLogin">
+        <p>Account ID:</p>
+        <input type="text" id="accountId"></input>
+        <!--<p>Section:</p>
+        <input type="text" id="sectionId"></input>-->
+        <input id="loginButton" type="button" value="Login" onclick="lpLoginUser();"><br />
+    </div?>
+    <div id="loggedIn">
+        <center>
+            <img src="padlock.png"></img>
+            <p>Logged in</p>
+            <div>
+              <p>ID Token</p>
+              <TextArea id="idToken"></TextArea>
+            </div>
+        </center>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,143 @@
+{
+  "targetAccount": "44324426",
+  "sourceAccount": "19211303",
+  "accountEvent": "de8022b5-53f5-481b-a40c-4979274f0285",
+  "diff": [
+    {
+      "type": "profiles",
+      "idArr": [
+        {
+          "id": "Administrator"
+        },
+        {
+          "id": "Agent"
+        },
+        {
+          "id": "Campaign Manager"
+        },
+        {
+          "id": "Agent Manager"
+        },
+        {
+          "id": "Administrator (ITID)"
+        },
+        {
+          "id": "Campaign Manager (Business)"
+        },
+        {
+          "id": "Controller Bot"
+        },
+        {
+          "id": "Campaign Manager (Digital)"
+        },
+        {
+          "id": "Campaign Manager (ITID)"
+        },
+        {
+          "id": "GCCB BCP"
+        },
+        {
+          "id": "GCCB BCP (Agent Manager)"
+        },
+        {
+          "id": "QA (Agent Manager)"
+        },
+        {
+          "id": "R&A (Agent Manager)"
+        },
+        {
+          "id": "Report Builder"
+        },
+        {
+          "id": "WFM (Agent Manager)"
+        },
+        {
+          "id": "Agent [New workspace]"
+        },
+        {
+          "id": "Agent Manager [New workspace]"
+        },
+        {
+          "id": "Basic Manager (Test)"
+        },
+        {
+          "id": "Administrator (Development Configure)"
+        },
+        {
+          "id": "Campaign Manager (Develop Datasource)"
+        },
+        {
+          "id": "Survey Bot"
+        },
+        {
+          "id": "agent-ty"
+        },
+        {
+          "id": "Agent Manager_AB"
+        },
+        {
+          "id": "Campaign Manager (Digital)_AB"
+        },
+        {
+          "id": "Campaign Manager (Business)_AB"
+        },
+        {
+          "id": "Agent Manager [New workspace][1]_AB"
+        },
+        {
+          "id": "Campaign Manager (ITID)_AB"
+        },
+        {
+          "id": "Conversation Manager"
+        },
+        {
+          "id": "Conversation Builder – Acceptor"
+        },
+        {
+          "id": "Conversation Builder – Creator"
+        },
+        {
+          "id": "liveperson-outbound-user-profile"
+        },
+        {
+          "id": "RM & RO"
+        }
+      ],
+      "toRemoveFromTarget": [],
+      "toAddToTarget": [
+        "Administrator (ITID)",
+        "Campaign Manager (Business)",
+        "Controller Bot",
+        "Campaign Manager (Digital)",
+        "Campaign Manager (ITID)",
+        "GCCB BCP",
+        "GCCB BCP (Agent Manager)",
+        "QA (Agent Manager)",
+        "R&A (Agent Manager)",
+        "Report Builder",
+        "WFM (Agent Manager)",
+        "Agent [New workspace]",
+        "Agent Manager [New workspace]",
+        "Basic Manager (Test)",
+        "Administrator (Development Configure)",
+        "Campaign Manager (Develop Datasource)",
+        "Survey Bot",
+        "agent-ty",
+        "Agent Manager_AB",
+        "Campaign Manager (Digital)_AB",
+        "Campaign Manager (Business)_AB",
+        "Agent Manager [New workspace][1]_AB",
+        "Campaign Manager (ITID)_AB",
+        "Conversation Manager",
+        "Conversation Builder – Acceptor",
+        "Conversation Builder – Creator",
+        "liveperson-outbound-user-profile",
+        "RM & RO"
+      ],
+      "sourceAccountRevision": 1649313806000,
+      "targetAccountRevision": 1647559447000,
+      "nonWhitelistedIds": [],
+      "dependents": []
+    }
+  ]
+}

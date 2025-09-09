@@ -1,0 +1,15 @@
+[2022-04-08T13:00:07.033] [ERROR] default - Got Error from the server when sent request Error: read ECONNRESET
+[2022-04-08T13:00:43.500] [ERROR] default - Error received from the server: 500 - {"errorMessage":"401 - {\"time\":\"2022-04-07 23:00:43\",\"message\":\"The requested cannot be fulfilled due to missing privileges.\",\"internalCode\":10,\"responseStatus\":\"UNAUTHORIZED\"}"}
+[2022-04-08T13:01:38.483] [ERROR] default - Error received from the server: Error: read ECONNRESET
+[2022-04-08T13:03:05.692] [ERROR] default - { message: 'Login Fail',
+  details:
+   Error: elevate permission failed with error code: StatusCodeError: 401 - {"errorId":"05d627b6-7d6e-42b4-8023-700fc4d3f3ed"}. Please check your credentials and try again.
+       at Function.handleError (/usr/local/lib/etsops/lib/commands/login.js:109:15)
+       at Function.elevatePermissionFlow (/usr/local/lib/etsops/lib/commands/login.js:102:26) }
+[2022-04-08T13:03:08.277] [ERROR] default - cant find token for account 44324426 in key chain
+[2022-04-08T13:03:08.279] [ERROR] default - { message: 'Failed to fetch session info from store',
+  details:
+   'You are not logged in to the target account \'44324426\'. Please login first.' }
+[2022-04-08T13:07:03.090] [ERROR] default - Error received from the server: 401 - {"message":"Unauthorized","errorCode":"{\"status\":401,\"code\":5,\"message\":\"Your session token is invalid. Please login again.\"}"}
+[2022-04-08T13:08:27.832] [ERROR] default - Got Error from the server when sent request Error: read ECONNRESET
+[2022-04-08T13:08:50.516] [ERROR] default - Error received from the server: Error: read ECONNRESET

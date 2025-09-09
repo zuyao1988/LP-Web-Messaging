@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- optimized meta tag -->
+    <meta name="viewport" content="user-scalable=0, width=device-width, initial-scale=1.0,  minimum-scale=1.0, maximum-scale=1.0">
+    <title> LE Tag Code Pack - Web Messaging</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- le-mtagconfig.js must be called from every page. Please update src accordingly -->
+    
+<!-- BEGIN LivePerson Monitor. -->
+<script type="text/javascript">window.lpTag=window.lpTag||{},'undefined'==typeof window.lpTag._tagCount?(window.lpTag={wl:lpTag.wl||null,scp:lpTag.scp||null,site:'15531115'||'',section:lpTag.section||'',tagletSection:lpTag.tagletSection||null,autoStart:false,ovr:lpTag.ovr||{},_v:'1.10.0',_tagCount:1,protocol:'https:',events:{bind:function(t,e,i){lpTag.defer(function(){lpTag.events.bind(t,e,i)},0)},trigger:function(t,e,i){lpTag.defer(function(){lpTag.events.trigger(t,e,i)},1)}},defer:function(t,e){0===e?(this._defB=this._defB||[],this._defB.push(t)):1===e?(this._defT=this._defT||[],this._defT.push(t)):(this._defL=this._defL||[],this._defL.push(t))},load:function(t,e,i){var n=this;setTimeout(function(){n._load(t,e,i)},0)},_load:function(t,e,i){var n=t;t||(n=this.protocol+'//'+(this.ovr&&this.ovr.domain?this.ovr.domain:'lptag.liveperson.net')+'/tag/tag.js?site='+this.site);var o=document.createElement('script');o.setAttribute('charset',e?e:'UTF-8'),i&&o.setAttribute('id',i),o.setAttribute('src',n),document.getElementsByTagName('head').item(0).appendChild(o)},init:function(){this._timing=this._timing||{},this._timing.start=(new Date).getTime();var t=this;window.attachEvent?window.attachEvent('onload',function(){t._domReady('domReady')}):(window.addEventListener('DOMContentLoaded',function(){t._domReady('contReady')},!1),window.addEventListener('load',function(){t._domReady('domReady')},!1)),'undefined'===typeof window._lptStop&&this.load()},start:function(){this.autoStart=!0},_domReady:function(t){this.isDom||(this.isDom=!0,this.events.trigger('LPT','DOM_READY',{t:t})),this._timing[t]=(new Date).getTime()},vars:lpTag.vars||[],dbs:lpTag.dbs||[],ctn:lpTag.ctn||[],sdes:lpTag.sdes||[],hooks:lpTag.hooks||[],identities:lpTag.identities||[],ev:lpTag.ev||[]},lpTag.init()):window.lpTag._tagCount+=1;</script>
+<!-- END LivePerson Monitor. -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script type="text/javascript">
+    // lpTag.autoStart = false;
+
+
+
+    function deParam(str) {
+        return (str || document.location.search).replace(/(^\?)/, '').split("&").map(function(n) { return n = n.split("="), this[n[0]] = n[1], this }.bind({}))[0];
+    }
+
+    function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+            results = regex.exec(url);
+        if (!results)
+            return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+
+    var cnf = {
+        redirectURI: document.location.href, //.replace('web-messaging-login-page.html', 'web-messaging-bank-portal.html'),
+        authURI: "https://dev-izkao4-v.au.auth0.com/authorize",
+        clientID: "9QGDzw0SnsUs4jRK3hBjNs1aEBpxncWY",
+        connection: "Username-Password-Authentication",
+        grantType: "password",
+        nonce: "LiveEngage",
+        scope: "openid profile",
+        responseType: "id_token" // responseType:"code" for codeflow/ id_token 
+    };
+
+    var hashParam = deParam(window.location.hash.substr(1)); //comment for codeflow
+    var idtoken = hashParam.id_token;
+    //var code = getParameterByName('code'); //uncomment for codeflow
+
+
+    window.lpGetAuthenticationToken = function(callback) {
+        //if(typeof code === 'undefined'){
+        if (typeof idtoken === 'undefined') {
+            console.log('id token undefined');
+
+            if (document.location.href.indexOf('web-messaging-bank-portal.html')) {
+                document.location = document.location.href.replace('web-messaging-bank-portal.html', 'web-messaging-login-page.html');
+            }
+            // lpLoginUser();
+        } else {
+            console.log("Got notification from the cb redirect tab: " + idtoken);
+            // NOTE: requires the addition of the following added to the 'lpUnifiedWindow' taglet configuration in Houston.
+            /*
+              [
+                  {
+                      "id": "useOAuth2Standard",
+                      "value": "true"
+                  }
+              ]
+            */
+            var payload = {
+                ssoKey: idtoken, // code (AuthKey) in Code Flow, id_token (JWT) in Implicit Flow
+                redirect_uri: document.location.href // NOTE: In implicit Flow strip the URL Fragments
+            };
+
+            //var payload =idtoken;
+            console.log('payload: ' + JSON.stringify(payload));
+            console.log('error: ' + error);
+            var error;
+            if (error !== undefined) {
+                var delayInMilliseconds = 3000; //1 second
+
+                setTimeout(function() {
+                  //your code to be executed after 1 second
+                  callback(payload, error);
+                }, delayInMilliseconds);
+                
+            } else {
+                callback(payload);
+            }
+        }
+    };
+
+    window.lpLogoutUser = function() {
+
+        var cnf = {
+            redirectURI: document.location.href.split('/').pop() == "" ? window.location.origin + '/web-messaging-bank-portal.html' : document.location.href.replace('web-messaging-login-page.html', 'web-messaging-bank-portal.html'),
+            // redirectURI: 'http://localhost:8082/web-messaging-bank-portal.html',
+            logoutURI: "https://dev-izkao4-v.au.auth0.com/v2/logout",
+            clientID: "9QGDzw0SnsUs4jRK3hBjNs1aEBpxncWY",
+            connection: "Username-Password-Authentication",
+            grantType: "password",
+            nonce: "LiveEngage",
+            scope: "openid",
+            responseType: "id_token" //// responseType:"code" for codeflow/ id_token 
+        };
+
+        document.location = cnf.logoutURI + "?" + $.param({
+            returnTo: window.location.origin + '/web-messaging-login-page.html',
+            client_id: cnf.clientID
+        });
+
+
+
+
+        // document.location = document.location.href.replace('web-messaging-bank-portal.html', 'web-messaging-login-page.html');
+    };
+
+    // Start Tag or not...
+    $(document).ready(function() {
+        //if(typeof code !== 'undefined'){
+        if (typeof idtoken !== 'undefined') {
+            // Logged in with Token
+            console.log("have id_token/code");
+            document.getElementById("idToken").value = idtoken;
+
+            // console.log(idtoken);
+
+            //lpTag.section = ["test-auth"];
+            lpTag.section = ["authchat"];
+            //TODO: Make dynamic and pickup section field
+
+            // NOTE: We are pulling apart the JWT here, but for code flow, JWE & in general this is BAD practice.
+            // The web portal should know this information VIA an API or other existing means, please read documentation below for further information.
+            var tempClaims = idtoken.split('.');
+            if (!tempClaims.length == 3) {
+                console.warn('JWT not valid, perhaps go back to login screen?');
+                return;
+            } else {
+                console.log('looks like a jwt...');
+                //console.log(tempClaims[1]);
+            }
+
+            //var claims = JSON.parse(atob(tempClaims[1]));
+            var base64Url = tempClaims[1];
+            var base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+            var claimsStr = decodeURIComponent(window.atob(base64).split('').map(function(c) {
+        return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+            }).join(''));
+
+            
+            // NOTE: base64 decode brower support here, https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/atob
+
+            const claims = JSON.parse(claimsStr);
+            console.log(claims.name);
+
+            // NOTE: Required for Authenticated web messaging on ALL pages...
+            // LP Monitoring: https://developers.liveperson.com/rt-interactions-monitoring-overview.html#terminology
+            // RFC: http://openid.net/specs/openid-connect-core-1_0.html#IDToken
+            function identityFn(callback) {
+                console.log('inside identityFn');
+                console.log(callback);
+                callback({
+                    iss: claims.iss, //issuer
+                    acr: "loa1", //
+                    sub: claims.sub //user-id
+                });
+            }
+
+            var delayInMilliseconds = 3000;
+            setTimeout(function() {
+              //your code to be executed after 1 second
+              lpTag.identities.push(identityFn);
+              lpTag.start();
+            }, delayInMilliseconds);
+            // lpTag.identities.push(identityFn);
+            // lpTag.start();
+            
+            var toLogin = document.getElementById('toLogin');
+            toLogin.style.visibility = 'hidden';
+            var loggedIn = document.getElementById('loggedIn');
+            loggedIn.style.visibility = 'visible';
+
+        } else {
+            // Need to login and collect Token
+            if (document.location.href.indexOf('web-messaging-bank-portal.html')) {
+                document.location = document.location.href.replace('web-messaging-bank-portal.html', 'web-messaging-login-page.html');
+            }
+        }
+
+        lpTag.site = $.cookie('lpSite') || lpTag.site;
+        if (lpTag.site !== undefined && lpTag.site !== '') {
+            document.getElementById("accountId").value = lpTag.site;
+            console.log("did i get the right site id? site id is currently " + lpTag.site);
+        }
+
+        lpTag.events.bind({
+            appName: "LP_OFFERS",
+            eventName: "OFFER_IMPRESSION",
+            triggerOnce: false,
+            func: function(data) {
+                console.log("SOMETHIG LOADINGxx!!!: " + JSON.stringify(data));
+                if (data.engagementType == 1 && data.state == 0) { console.log("SOMETHIG LOADING!!!: " + JSON.stringify(data)); }
+            }
+        });
+
+        lpTag.events.bind({
+            appName: "lpUnifiedWindow",
+            eventName: "conversationInfo",
+            func: function(data) {
+                console.log("xxxxxxx conversationInfo: " + JSON.stringify(data));
+            }
+        })
+
+    });
+    </script>
+</head>
+
+<body>
+    <script type="text/javascript">
+    lpTag.sdes = lpTag.sdes || []; //Always include the declaration of the SDE's array.
+
+    lpTag.identities = lpTag.identities || []; // NOTE: Required for authenticated web messaging or earlier.
+    </script>
+    <div id="loginBox">
+        <p><img src="livebank-logo.png"></img></p>
+        <div id="toLogin">
+            <p>Account ID 2:</p>
+            <input type="text" id="accountId"></input>
+            <!--<p>Section:</p>
+        <input type="text" id="sectionId"></input>-->
+            </div?>
+            <div id="loggedIn">
+                <center>
+                    <img src="padlock.png"></img>
+                    <p>Logged in</p>
+                    <input id="loginButton" type="button" value="Logout" onclick="lpLogoutUser();"><br />
+                    <div>
+                        <p>ID Token / Code</p>
+                        <TextArea id="idToken"></TextArea>
+                    </div>
+                </center>
+            </div>
+        </div>
+    <div class="col-md-4">
+      <h4>Contact</h4>
+      <p> Collins Street West Victoria 8007 Australia.<br>
+        Call: 612.269.8419 <br>
+        Email : <a href="mailto:hello@floix.com"> hello@floix.com </a></p>
+        <div>
+            <input data-model="text" id="loanAmtReq" name="loanAmtReq" type="text" size="30" maxlength="15" class="csTextField" value="">
+        </div>
+    </div>
+</body>
+
+</html>

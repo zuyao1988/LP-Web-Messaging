@@ -1,0 +1,118 @@
+{
+  "targetAccount": "44324426",
+  "sourceAccount": "19211303",
+  "accountEvent": "f89f8c73-d0d9-407c-84da-4457b343f2d9",
+  "diff": [
+    {
+      "type": "features",
+      "idArr": [
+        {
+          "id": "Messaging.isCtrlEnterFeatureEnabled"
+        },
+        {
+          "id": "Reports.leReportBuilderOpenProfile"
+        },
+        {
+          "id": "Messaging.Auto_Messages"
+        },
+        {
+          "id": "Reports.leMstrAccess"
+        },
+        {
+          "id": "Reports.leDashboardAccess"
+        },
+        {
+          "id": "Reports.leReportBuilderAnalytics"
+        },
+        {
+          "id": "Messaging.Consumer_Message_Channel_Indicator"
+        },
+        {
+          "id": "Reports.leReportBuilderNonLpa"
+        },
+        {
+          "id": "Common.Historic_Data_Masking_Agent_Summary"
+        },
+        {
+          "id": "Shark.Consumer_Journey_Identity_Only_Support"
+        },
+        {
+          "id": "Messaging.Un_Auth_Messaging"
+        },
+        {
+          "id": "UnifiedWindow.Block_CC_Patterns"
+        },
+        {
+          "id": "Messaging.Agent_File_Sharing_v2"
+        },
+        {
+          "id": "LEUI.ConnectionBar_CaseManagement_Visible"
+        },
+        {
+          "id": "Reports.LE_DataAccess"
+        },
+        {
+          "id": "Common.API_User_Login"
+        },
+        {
+          "id": "Messaging.AgentSetConsumerProfile"
+        },
+        {
+          "id": "Common.AuditTrail"
+        },
+        {
+          "id": "Reports.leReportBuilderAccess"
+        },
+        {
+          "id": "LEUI.ConnectionBar_OpenCase_Visible"
+        },
+        {
+          "id": "Messaging.StepUp_close_previous_auth_conversation"
+        },
+        {
+          "id": "Common.Global_Encryption_Enabled"
+        },
+        {
+          "id": "LEUI.Messaging_Agent_List"
+        },
+        {
+          "id": "Voice.Agent_Call_Controls_Enabled"
+        },
+        {
+          "id": "Common.Messaging_Survey"
+        },
+        {
+          "id": "Messaging.Agent_Link_Sending"
+        },
+        {
+          "id": "LEUI.Messaging_Secure_Form"
+        },
+        {
+          "id": "Messaging.Transfer_To_Agent"
+        },
+        {
+          "id": "Messaging.AgentMasking"
+        },
+        {
+          "id": "Common.AES256_Encryption"
+        },
+        {
+          "id": "Common.Takeover_Conversation"
+        },
+        {
+          "id": "Common.SecureForms_LE2"
+        }
+      ],
+      "toRemoveFromTarget": [
+        "Messaging.isCtrlEnterFeatureEnabled",
+        "Messaging.Consumer_Message_Channel_Indicator",
+        "Voice.Agent_Call_Controls_Enabled"
+      ],
+      "toAddToTarget": [],
+      "sourceAccountRevision": 29,
+      "targetAccountRevision": 1,
+      "nonWhitelistedIds": [],
+      "dependents": []
+    }
+  ]
+}
