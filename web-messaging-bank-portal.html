@@ -120,6 +120,7 @@
 
         // Build the returnTo URL
         const returnToURL = window.location.origin + basePath + 'web-messaging-login-page.html';
+        console.log(returnToURL);
 
         document.location = cnf.logoutURI + "?" + $.param({
             returnTo: returnToURL,

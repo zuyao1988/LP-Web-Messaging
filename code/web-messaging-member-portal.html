@@ -116,7 +116,7 @@
       //     console.log('inside identityFn');
       //     console.log(callback);
       //     callback({
-      //         iss: "https://dev-izkao4-v.au.auth0.com/", //"https://abc-izkao4-v.au.lol.com/", //claims.iss, //issuer
+      //         iss: "https://dev-xp3j4tvq.auth0.com/", //"https://abc-izkao4-v.au.lol.com/", //claims.iss, //issuer
       //         acr: "loa1", //
       //         sub: "auth0|601123bd29fe4800694032c1"//"xxxxxxx" //claims.sub //user-id
       //     });
@@ -141,13 +141,13 @@
         try {
           
           var bearerSettings = {
-            "url": "https://dev-izkao4-v.au.auth0.com/oauth/token",// Token Endpoint
+            "url": "https://dev-xp3j4tvq.auth0.com/oauth/token",// Token Endpoint
             "method": "POST",
             "timeout": 0,
             "headers": {
               "Content-Type": "application/json"
             },
-            "data": JSON.stringify({"grant_type":"client_credentials","client_id":"9QGDzw0SnsUs4jRK3hBjNs1aEBpxncWY","client_secret":"9ztOiiAOGk0S-3j27wDKaWgqsyh2AfZu8zFvk2tvf1w-ucluKmqMUzhltslXJBWQ","audience":"https://dev-izkao4-v.au.auth0.com/api/v2/"}),
+            "data": JSON.stringify({"grant_type":"client_credentials","client_id":"l6EYVwVr2Doauy0ixv6fMHrTeEFwkAGX","client_secret":"FT1AN9frptQTZPHK5Bj2PRVaM3s6lZXfllY1jBRoEm3pjLkl9Vdp-vOmIV__maxT","audience":"https://dev-xp3j4tvq.auth0.com/api/v2/"}),
           };
           const response = await getData(bearerSettings)
           console.log(`Bearer response: ${JSON.stringify(response)}`);
@@ -155,13 +155,13 @@
           console.log("111")
 
           var codeSettings = {
-            "url": "https://dev-izkao4-v.au.auth0.com/oauth/token",
+            "url": "https://dev-xp3j4tvq.auth0.com/oauth/token",
             "method": "POST",
             "headers": {
               "content-type": "application/x-www-form-urlencoded",
               "authorization": bearerToken
             },
-            "data": {"grant_type":"authorization_code","client_id":"9QGDzw0SnsUs4jRK3hBjNs1aEBpxncWY","client_secret":"9ztOiiAOGk0S-3j27wDKaWgqsyh2AfZu8zFvk2tvf1w-ucluKmqMUzhltslXJBWQ","code":code, "redirect_uri": document.location.href}
+            "data": {"grant_type":"authorization_code","client_id":"l6EYVwVr2Doauy0ixv6fMHrTeEFwkAGX","client_secret":"FT1AN9frptQTZPHK5Bj2PRVaM3s6lZXfllY1jBRoEm3pjLkl9Vdp-vOmIV__maxT","code":code, "redirect_uri": document.location.href}
           }
           const codeResponse = await getData(codeSettings)
           console.log(`response from IDP: ${JSON.stringify(codeResponse)}`);
@@ -219,13 +219,13 @@
       console.log("222")
 
       var settings = {
-        "url": "https://dev-izkao4-v.au.auth0.com/oauth/token",
+        "url": "https://dev-xp3j4tvq.auth0.com/oauth/token",
         "method": "POST",
         "headers": {
           "content-type": "application/x-www-form-urlencoded",
           "authorization": bearerToken
         },
-        "data": {"grant_type":"authorization_code","client_id":"9QGDzw0SnsUs4jRK3hBjNs1aEBpxncWY","client_secret":"9ztOiiAOGk0S-3j27wDKaWgqsyh2AfZu8zFvk2tvf1w-ucluKmqMUzhltslXJBWQ","code":code, "redirect_uri": document.location.href}
+        "data": {"grant_type":"authorization_code","client_id":"l6EYVwVr2Doauy0ixv6fMHrTeEFwkAGX","client_secret":"FT1AN9frptQTZPHK5Bj2PRVaM3s6lZXfllY1jBRoEm3pjLkl9Vdp-vOmIV__maxT","code":code, "redirect_uri": document.location.href}
       }
 
       // $.ajax(settings)
@@ -283,7 +283,7 @@
       //     console.log('inside identityFn');
       //     console.log(callback);
       //     callback({
-      //         iss: "https://dev-izkao4-v.au.auth0.com/", //"https://abc-izkao4-v.au.lol.com/", //claims.iss, //issuer
+      //         iss: "https://dev-xp3j4tvq.auth0.com/", //"https://abc-izkao4-v.au.lol.com/", //claims.iss, //issuer
       //         acr: "loa1", //
       //         sub: "auth0|601123bd29fe4800694032c1"//"xxxxxxx" //claims.sub //user-id
       //     });
