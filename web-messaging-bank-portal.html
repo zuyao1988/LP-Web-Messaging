@@ -112,17 +112,19 @@
         //     returnTo: window.location.href.split('/').slice(0,-1).join('/') + '/web-messaging-login-page.html',
         //     client_id: cnf.clientID
         // });
-        // document.location = cnf.logoutURI + "?" + $.param({
-        //     returnTo: window.location.origin + '/web-messaging-login-page.html',
-        //     client_id: cnf.clientID
-        // });
+
+        // Check if the current path contains /LP-Web-Messaging
+        const basePath = window.location.pathname.includes('/LP-Web-Messaging') 
+            ? '/LP-Web-Messaging/' 
+            : '/';
+
+        // Build the returnTo URL
+        const returnToURL = window.location.origin + basePath + 'web-messaging-login-page.html';
+
         document.location = cnf.logoutURI + "?" + $.param({
-            returnTo: document.location.href.split('/').pop() == "" ? window.location.origin + '/web-messaging-bank-portal.html' : document.location.href.replace('web-messaging-login-page.html', 'web-messaging-bank-portal.html'),
+            returnTo: returnToURL,
             client_id: cnf.clientID
-        });
-
-
-        
+        }); 
 
 
         // document.location = document.location.href.replace('web-messaging-bank-portal.html', 'web-messaging-login-page.html');
