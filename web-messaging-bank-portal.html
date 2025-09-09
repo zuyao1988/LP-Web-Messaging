@@ -112,10 +112,17 @@
         //     returnTo: window.location.href.split('/').slice(0,-1).join('/') + '/web-messaging-login-page.html',
         //     client_id: cnf.clientID
         // });
+        // document.location = cnf.logoutURI + "?" + $.param({
+        //     returnTo: window.location.origin + '/web-messaging-login-page.html',
+        //     client_id: cnf.clientID
+        // });
         document.location = cnf.logoutURI + "?" + $.param({
-            returnTo: window.location.origin + '/web-messaging-login-page.html',
+            returnTo: document.location.href.split('/').pop() == "" ? window.location.origin + '/web-messaging-bank-portal.html' : document.location.href.replace('web-messaging-login-page.html', 'web-messaging-bank-portal.html'),
             client_id: cnf.clientID
         });
+
+
+        
 
 
         // document.location = document.location.href.replace('web-messaging-bank-portal.html', 'web-messaging-login-page.html');
