@@ -112,9 +112,9 @@
         responseType: "id_token" //// responseType:"code" for codeflow/ id_token 
     };
     // Check if the current path contains /LP-Web-Messaging
-    const basePath = window.location.pathname.includes('/LP-Web-Messaging') 
-        ? '/LP-Web-Messaging/' 
-        : '/';
+    const basePath = window.location.pathname.includes('/LP-Web-Messaging/code/') 
+        ? '/LP-Web-Messaging/code/' 
+        : '/code/';
 
     // Build the returnTo URL
     const returnToURL = window.location.origin + basePath + 'web-messaging-login-page.html';
@@ -389,7 +389,7 @@ lpTag.autoStart = false;
             <p>Logged in</p>
             <input id="loginButton" type="button" value="Logout" onclick="lpLogoutUser();"><br />
             <div>
-              <p>ID Token / Code</p>
+              <p>ID Token /Code</p>
               <TextArea id="idToken"></TextArea>
             </div>
         </center>
