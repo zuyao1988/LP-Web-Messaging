@@ -98,7 +98,34 @@
     };
 
     window.lpLogoutUser = function() {
-      document.location = document.location.href.replace('web-messaging-bank-portal.html', 'web-messaging-login-page.html');
+
+      var cnf = {
+        redirectURI: window.location.href.split('/').slice(0,-1).join('/') + '/web-messaging-login-page.html',
+        // redirectURI: document.location.href.split('/').pop() == "" ? window.location.origin + '/web-messaging-bank-portal.html' : document.location.href.replace('web-messaging-login-page.html', 'web-messaging-bank-portal.html'),
+        // redirectURI: 'http://localhost:8082/web-messaging-bank-portal.html',
+        logoutURI: "https://dev-xp3j4tvq.auth0.com/v2/logout",
+        clientID: "l6EYVwVr2Doauy0ixv6fMHrTeEFwkAGX",
+        connection: "Username-Password-Authentication",
+        grantType: "password",
+        nonce: "LiveEngage",
+        scope: "openid",
+        responseType: "id_token" //// responseType:"code" for codeflow/ id_token 
+    };
+    // Check if the current path contains /LP-Web-Messaging
+    const basePath = window.location.pathname.includes('/LP-Web-Messaging') 
+        ? '/LP-Web-Messaging/' 
+        : '/';
+
+    // Build the returnTo URL
+    const returnToURL = window.location.origin + basePath + 'web-messaging-login-page.html';
+    console.log(returnToURL);
+
+    document.location = cnf.logoutURI + "?" + $.param({
+        returnTo: returnToURL,
+        client_id: cnf.clientID
+    }); 
+
+      // document.location = document.location.href.replace('web-messaging-bank-portal.html', 'web-messaging-login-page.html');
     };
 
  // Start Tag or not...
@@ -362,7 +389,7 @@ lpTag.autoStart = false;
             <p>Logged in</p>
             <input id="loginButton" type="button" value="Logout" onclick="lpLogoutUser();"><br />
             <div>
-              <p>ID Token /Code</p>
+              <p>ID Token / Code</p>
               <TextArea id="idToken"></TextArea>
             </div>
         </center>
